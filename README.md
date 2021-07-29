@@ -1,2 +1,2 @@
-# portfolio
-This is my portfolio website repo
+# Portfolio
+Repo for the portfolio website.
