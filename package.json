@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install",
+    "pre-commit": "next lint --fix"
   },
   "dependencies": {
     "next": "latest",
@@ -14,7 +16,11 @@
     "autoprefixer": "^10.2.6",
     "eslint": "^7.31.0",
     "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.1",
     "postcss": "^8.3.5",
+    "prettier": "2.3.2",
     "tailwindcss": "^2.2.4"
   }
 }

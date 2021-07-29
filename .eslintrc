@@ -1,3 +1,17 @@
 {
-  "extends": "next"
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    // Use our .prettierrc file as source
+    "quotes": 1,
+    "comma-dangle": 1,
+    "no-unused-vars": "error"
+  }
 }
