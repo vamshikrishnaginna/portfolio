@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <div className={"w-72"}>
+        <div className={"w-64"}>
           <Image src={profilePicture} alt={"Picture of Ashfaq"} />
         </div>
         <h1 className="mt-3 text-3xl text-white">
