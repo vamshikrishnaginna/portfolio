@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import profilePicture from "../public/images/profile.png";
 
 export default function Home() {
   return (
@@ -8,13 +10,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-3xl text-white">
+        <div className={"w-72"}>
+          <Image src={profilePicture} alt={"Picture of Ashfaq"} />
+        </div>
+        <h1 className="mt-3 text-3xl text-white">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           I'm <span className={"text-5xl text-buffy"}>Ashfaq Nisar </span>
         </h1>
 
         <p className="mt-3 text-xl text-gray-200">
-          Greetings, Welcome to the beautiful site!
+          Hi, You can find me in a corner doing my own thing.
         </p>
       </main>
     </div>
