@@ -1,4 +1,5 @@
 {
   "bracketSpacing": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "proseWrap": "never"
 }
