@@ -5,14 +5,13 @@ import profilePicture from "../public/images/profile.png";
 export default function Home() {
   return (
     <>
-      {/*<div className=" items-center justify-center min-h-screen py-2 bg-draculaPrimaryBG">*/}
       <Head>
         <title>Ashfaq Nisar</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={"min-h-screen bg-draculaPrimaryBG"}>
         <div className="md:container md:mx-auto">
-          <div className="h-screen flex flex-row items-center justify-evenly">
+          <div className="h-screen flex flex-col-reverse sm:flex-row text-center sm:text-left items-center justify-evenly">
             <div>
               <h1 className="text-3xl text-white">
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -29,7 +28,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      {/*</div>*/}
     </>
   );
 }
