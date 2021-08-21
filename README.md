@@ -1,2 +1,2 @@
 # Portfolio
-Repo for the portfolio website.
+## Built using Next, Tailwind & HeadlessUI & Firebase.
