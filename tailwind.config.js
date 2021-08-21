@@ -23,6 +23,7 @@ module.exports = {
       vonCount: "#6272a4",
       vanHelsing: "#8be9fd",
       blade: "#50fa7b",
+      bladeHover: "rgba(80,250,123,.8)",
       morbius: "#ffb86c",
       buffy: "#ff79c6",
       dracula: "#bd93f9",
