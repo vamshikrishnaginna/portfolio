@@ -26,7 +26,7 @@ const TopBar = () => {
   return (
     <Popover className="relative bg-darker">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a
               href="#"
@@ -46,7 +46,7 @@ const TopBar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-lg font-medium text-white hover:text-pink"
+                className="text-lg font-medium text-white hover:text-pink border-b-2 border-darker hover:border-pink transition duration-500 ease-in-out"
               >
                 {item.name}
               </a>
@@ -97,7 +97,7 @@ const TopBar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-lg font-medium text-white hover:text-pink"
+                    className="text-lg font-medium text-white hover:text-pink border-b-2 border-darker hover:border-pink transition duration-500 ease-in-out"
                   >
                     {item.name}
                   </a>

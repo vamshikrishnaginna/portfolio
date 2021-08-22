@@ -18,11 +18,14 @@ const Home = () => {
                 <h1 className="text-3xl text-white">
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
                   I'm{" "}
-                  <span className={"text-5xl text-buffy"}>Ashfaq Nisar </span>
+                  <span className={"text-6xl text-buffy font-bold"}>
+                    Ashfaq Nisar{" "}
+                  </span>
                 </h1>
-                <p className="mt-3 text-xl text-gray-200">
+                <p className="mt-3 text-xl text-gray-200 font-medium">
                   Hi, You can find me in a corner doing my own thing.
                 </p>
+                <p className={"mt-3 text-white"}>ashfaqnisar00@gmail.com</p>
               </div>
 
               <div className="w-72">
