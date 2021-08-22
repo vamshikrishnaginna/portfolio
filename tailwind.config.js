@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      darker: "#282a36",
+      darker: "#171923",
       dark: "#44475a",
       light: "#f8f8f2",
       blue: "#6272a4",
@@ -29,7 +29,7 @@ module.exports = {
       dracula: "#bd93f9",
       marcelin: "#ff5555",
       lincoln: "#f1fa8c",
-      draculaPrimaryBG: "#383a59",
+      draculaPrimaryBG: "rgba(0,0,0,0.93)",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
