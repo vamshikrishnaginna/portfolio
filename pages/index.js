@@ -54,16 +54,16 @@ const Home = () => {
         </Head>
         <main className={"min-h-screen bg-draculaPrimaryBG"}>
           <div className="md:container md:mx-auto">
-            <div className="h-screen flex flex-col-reverse md:flex-row text-center md:text-left items-center justify-evenly">
+            <div className="h-screen flex flex-col-reverse md:flex-row text-center md:text-left items-center justify-center md:justify-evenly">
               <div className={"flex flex-col space-y-5 "}>
-                <h1 className="text-3xl text-white">
+                <h1 className="text-2xl sm:text-3xl text-white">
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
                   Hey, I'm{" "}
-                  <span className={"text-6xl text-buffy font-bold"}>
+                  <span className={"text-4xl sm:text-5xl text-buffy font-bold"}>
                     Ashfaq Nisar{" "}
                   </span>
                 </h1>
-                <p className="text-xl text-gray-200 font-medium">
+                <p className="text-lg sm:text-xl text-gray-200 font-medium">
                   Hi, You can find me in a corner doing my own thing.
                 </p>
                 <div
@@ -86,7 +86,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="w-72">
+              <div className="w-60 md:w-72 mb-2">
                 <Image src={profilePicture} alt={"Picture of Ashfaq"} />
               </div>
             </div>
