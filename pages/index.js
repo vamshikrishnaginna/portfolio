@@ -62,7 +62,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 font-medium">
-              Hi, You can find me in a corner doing my own thing.
+              You can find me in a corner doing my own thing.
             </p>
             <div
               className={
