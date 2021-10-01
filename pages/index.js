@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import profilePicture from "../public/images/profile.png";
-import Layout from "../components/layout";
 import {
   AiFillLinkedin,
   AiOutlineGithub,
-  AiOutlineTwitter,
   AiOutlineInstagram,
+  AiOutlineTwitter,
 } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaStackOverflow } from "react-icons/fa";
@@ -46,7 +45,7 @@ const Home = () => {
     },
   ];
   return (
-    <Layout>
+    <>
       <Head>
         <title>Ashfaq Nisar</title>
         <link rel="icon" href="/favicon.ico" />
@@ -88,7 +87,7 @@ const Home = () => {
           </div>
         </div>
       </main>
-    </Layout>
+    </>
   );
 };
 export default Home;

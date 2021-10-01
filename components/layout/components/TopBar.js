@@ -1,21 +1,21 @@
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Popover, Transition } from "@headlessui/react";
+import Link from "next/link";
 import { Fragment } from "react";
 
 const TopBar = () => {
   const links = [
     {
-      name: "About",
-      description: "About",
-      href: "#",
+      name: "Home",
+      description: "Home",
+      href: "/",
     },
     {
-      name: "Presentations",
-
-      href: "#",
+      name: "Projects",
+      href: "/projects",
     },
     {
-      name: "Experience",
+      name: "Gallery",
       href: "#",
     },
     {
@@ -28,12 +28,11 @@ const TopBar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10 z-50">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a
-              href="#"
-              className="text-3xl font-bold text-white px-1 py-1 rounded-md bg-white text-black"
-            >
-              AN
-            </a>
+            <Link href="/">
+              <a className="text-3xl font-bold text-white px-1 py-1 rounded-md bg-white text-black">
+                AN
+              </a>
+            </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-darker rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blade">
@@ -43,13 +42,11 @@ const TopBar = () => {
           </div>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 space-x-8">
             {links.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-lg font-medium text-white hover:text-pink border-b-2 border-darker hover:border-pink transition duration-500 ease-in-out"
-              >
-                {item.name}
-              </a>
+              <Link key={item.name} href={item.href}>
+                <a className="text-lg font-medium text-white hover:text-pink border-b-2 border-darker hover:border-pink transition duration-500 ease-in-out">
+                  {item.name}
+                </a>
+              </Link>
             ))}
 
             <a
@@ -97,13 +94,11 @@ const TopBar = () => {
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 {links.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-lg font-bold text-white hover:text-pink border-b-2 border-darker hover:border-pink transition duration-500 ease-in-out"
-                  >
-                    {item.name}
-                  </a>
+                  <Link key={item.name} href={item.href}>
+                    <a className="text-lg font-bold text-white hover:text-pink border-b-2 border-darker hover:border-pink transition duration-500 ease-in-out">
+                      {item.name}
+                    </a>
+                  </Link>
                 ))}
               </div>
               <div>
