@@ -47,14 +47,18 @@ const Projects = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={"flex bg-black"}>
-        <div className={"container min-h-screen mx-auto "}>
+        <div className={"container px-4 sm:mx-auto "}>
           {/*Todo: Add a back button*/}
-          <div className={"py-5 md:py-8"}>
+          <div className={"py-5 md:py-6"}>
             <h2 className={"text-2xl sm:text-2xl text-bold text-white"}>
               Projects
             </h2>
           </div>
-          <div className={"pt-3 grid grid-cols-4 gap-4"}>
+          <div
+            className={
+              "grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4"
+            }
+          >
             {sampleProjects.map((project) => {
               return (
                 <a key={project.title} href={project.link}>

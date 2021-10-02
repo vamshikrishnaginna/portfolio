@@ -16,11 +16,11 @@ const TopBar = () => {
     },
     {
       name: "Gallery",
-      href: "#",
+      href: "gallery",
     },
     {
       name: "Events",
-      href: "#",
+      href: "/events",
     },
   ];
   return (
@@ -29,7 +29,7 @@ const TopBar = () => {
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10 z-50">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
-              <a className="text-3xl font-bold text-white px-1 py-1 rounded-md bg-white text-black">
+              <a className="text-3xl font-bold px-1 py-1 rounded-md bg-white text-black">
                 AN
               </a>
             </Link>
@@ -76,12 +76,15 @@ const TopBar = () => {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <a
-                    href="#"
-                    className="text-3xl font-bold text-white px-1 py-1 rounded-md bg-white text-black"
-                  >
-                    AN
-                  </a>
+                  <Link href="/">
+                    <a
+                      className={
+                        "text-3xl font-bold px-1 py-1 rounded-md bg-white text-black"
+                      }
+                    >
+                      AN
+                    </a>
+                  </Link>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="bg-darker rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blade">
