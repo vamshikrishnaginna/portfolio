@@ -19,8 +19,8 @@ const TopBar = () => {
       href: "gallery",
     },
     {
-      name: "Events",
-      href: "/events",
+      name: "About",
+      href: "/about",
     },
   ];
   return (
