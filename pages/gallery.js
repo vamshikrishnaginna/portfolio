@@ -72,7 +72,7 @@ const Gallery = () => {
                     />
                     <div
                       className={
-                        "py-2 px-3 absolute bottom-0 bg-gradient-to-b from-transparent to-black "
+                        "py-2 px-3 absolute bottom-0 bg-gradient-to-b from-transparent via-[#00000087] to-black "
                       }
                     >
                       <h3 className={"text-xl text-white font-medium"}>
@@ -90,7 +90,5 @@ const Gallery = () => {
     </>
   );
 };
-
-/*rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(3, 3, 3, 0.78) 100%) repeat scroll 0% 0%*/
 
 export default Gallery;

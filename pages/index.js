@@ -56,7 +56,9 @@ const Home = () => {
             <h1 className="text-2xl sm:text-3xl text-white">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Hey, I'm{" "}
-              <span className={"text-4xl sm:text-5xl text-buffy font-bold"}>
+              <span
+                className={"text-4xl sm:text-5xl text-dracula-pink font-bold"}
+              >
                 Ashfaq Nisar{" "}
               </span>
             </h1>
