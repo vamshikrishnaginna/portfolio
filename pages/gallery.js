@@ -55,7 +55,7 @@ const Gallery = () => {
                 <div key={event.title}>
                   <div
                     className={
-                      "h-80 lg:h-96 filter saturate-50 hover:saturate-[1.25]"
+                      "h-80 lg:h-96 filter saturate-50 hover:saturate-[1.25] transition duration-500  origin-center ease-in-out transform hover:-translate-y-1 hover:scale-80"
                     }
                     style={{
                       width: "100%",
