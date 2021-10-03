@@ -16,7 +16,7 @@ const TopBar = () => {
     },
     {
       name: "Gallery",
-      href: "gallery",
+      href: "/gallery",
     },
     {
       name: "About",

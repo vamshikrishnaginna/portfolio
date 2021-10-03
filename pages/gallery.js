@@ -7,25 +7,25 @@ const Gallery = () => {
   const events = [
     {
       image: "https://picsum.photos/id/1015/400/400",
-      title: "Event Name",
+      title: "Event 1",
       description:
         "The astronaut malfunctions voyage like an intelligent teleporter.",
     },
     {
       image: "https://picsum.photos/id/1018/400/400",
-      title: "Event Name",
+      title: "Event 2",
       description:
         "The astronaut malfunctions voyage like an intelligent teleporter.",
     },
     {
       image: "https://picsum.photos/id/1022/400/400",
-      title: "Event Name",
+      title: "Event 3",
       description:
         "The astronaut malfunctions voyage like an intelligent teleporter.",
     },
     {
       image: "https://picsum.photos/id/1002/400/400",
-      title: "Event Name",
+      title: "Event 4",
       description:
         "The astronaut malfunctions voyage like an intelligent teleporter.",
     },
@@ -54,7 +54,9 @@ const Gallery = () => {
               return (
                 <div key={event.title}>
                   <div
-                    className={"rounded-md h-72 md:h-96"}
+                    className={
+                      "h-80 lg:h-96 filter saturate-50 hover:saturate-[1.25]"
+                    }
                     style={{
                       width: "100%",
                       position: "relative",
@@ -64,7 +66,7 @@ const Gallery = () => {
                       src={event.image}
                       alt={`${event.title} Image`}
                       layout={"fill"}
-                      className={"rounded-md"}
+                      className={" rounded-lg"}
                       placeholder={"blur"}
                       blurDataURL={`data:image/svg+xml;base64,${toBase64(
                         shimmer(400, 400),
@@ -72,7 +74,7 @@ const Gallery = () => {
                     />
                     <div
                       className={
-                        "py-2 px-3 absolute bottom-0 bg-gradient-to-b from-transparent via-[#00000087] to-black "
+                        "py-2 px-3 absolute bottom-0 bg-gradient-to-b from-transparent via-[#00000087] to-[#060606] "
                       }
                     >
                       <h3 className={"text-xl text-white font-medium"}>
