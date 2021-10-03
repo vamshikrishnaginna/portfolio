@@ -52,12 +52,9 @@ const Gallery = () => {
           >
             {events.map((event) => {
               return (
-                <div
-                  key={event.title}
-                  className={"border border-white rounded-md"}
-                >
+                <div key={event.title}>
                   <div
-                    className={"rounded-t-md h-72 md:h-80"}
+                    className={"rounded-md h-72 md:h-96"}
                     style={{
                       width: "100%",
                       position: "relative",
@@ -67,17 +64,22 @@ const Gallery = () => {
                       src={event.image}
                       alt={`${event.title} Image`}
                       layout={"fill"}
+                      className={"rounded-md"}
                       placeholder={"blur"}
                       blurDataURL={`data:image/svg+xml;base64,${toBase64(
                         shimmer(400, 400),
                       )}`}
                     />
-                  </div>
-                  <div className={"py-2 px-3"}>
-                    <h3 className={"text-xl text-white font-medium"}>
-                      {event.title}
-                    </h3>
-                    <h5 className={"text-gray-300"}>{event.description}</h5>
+                    <div
+                      className={
+                        "py-2 px-3 absolute bottom-0 bg-gradient-to-b from-transparent to-black "
+                      }
+                    >
+                      <h3 className={"text-xl text-white font-medium"}>
+                        {event.title}
+                      </h3>
+                      <h5 className={"text-gray-300"}>{event.description}</h5>
+                    </div>
                   </div>
                 </div>
               );
@@ -88,5 +90,7 @@ const Gallery = () => {
     </>
   );
 };
+
+/*rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(3, 3, 3, 0.78) 100%) repeat scroll 0% 0%*/
 
 export default Gallery;
