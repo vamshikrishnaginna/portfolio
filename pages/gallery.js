@@ -6,28 +6,30 @@ import { shimmer, toBase64 } from "../shared/base";
 const Gallery = () => {
   const events = [
     {
-      image: "https://picsum.photos/id/1015/400/400",
-      title: "Event 1",
-      description:
-        "The astronaut malfunctions voyage like an intelligent teleporter.",
+      id: "ibm",
+      image:
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633255380/ibm/1.jpg",
+      title: "IBM Hack 2K19 Challenge",
+      description: "Won the Best UI/UX Award in IBM Hack 2k19.",
     },
     {
-      image: "https://picsum.photos/id/1018/400/400",
-      title: "Event 2",
+      image:
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633255380/devfest_2019/1.jpg",
+      title: "Devfest 2019",
       description:
-        "The astronaut malfunctions voyage like an intelligent teleporter.",
+        "Enjoyed meeting people & learning about various technologies.",
     },
     {
-      image: "https://picsum.photos/id/1022/400/400",
-      title: "Event 3",
-      description:
-        "The astronaut malfunctions voyage like an intelligent teleporter.",
+      image:
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633258227/smart_city_hackathon/1.jpg",
+      title: "Smart City Hackathon 2018",
+      description: "Won the Best Prototype Award for the application.",
     },
     {
-      image: "https://picsum.photos/id/1002/400/400",
-      title: "Event 4",
-      description:
-        "The astronaut malfunctions voyage like an intelligent teleporter.",
+      image:
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633258227/ai_club/1.jpg",
+      title: "AI Club Inauguration",
+      description: "Organized & Initiated the AI Club in the college.",
     },
   ];
 
@@ -55,7 +57,7 @@ const Gallery = () => {
                 <div key={event.title}>
                   <div
                     className={
-                      "h-80 lg:h-96 filter saturate-50 hover:saturate-[1.25] transition duration-500  origin-center ease-in-out transform hover:-translate-y-1 hover:scale-80"
+                      "h-80 lg:h-96 filter hover:saturate-[1.25] transition duration-500  origin-center ease-in-out transform hover:-translate-y-1 hover:scale-80"
                     }
                     style={{
                       width: "100%",
@@ -76,6 +78,7 @@ const Gallery = () => {
                       className={
                         "py-2 px-3 absolute bottom-0 bg-gradient-to-b from-transparent via-[#00000087] to-[#060606] "
                       }
+                      style={{ width: "100%" }}
                     >
                       <h3 className={"text-xl text-white font-medium"}>
                         {event.title}
