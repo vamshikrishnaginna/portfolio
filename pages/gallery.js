@@ -6,13 +6,7 @@ import { shimmer, toBase64 } from "../shared/base";
 const Gallery = () => {
   const events = [
     {
-      id: "ibm",
-      image:
-        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633255380/ibm/1.jpg",
-      title: "IBM Hack 2K19 Challenge",
-      description: "Won the Best UI/UX Award in IBM Hack 2k19.",
-    },
-    {
+      id: "devfest_2019",
       image:
         "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633255380/devfest_2019/1.jpg",
       title: "Devfest 2019",
@@ -20,16 +14,48 @@ const Gallery = () => {
         "Enjoyed meeting people & learning about various technologies.",
     },
     {
+      id: "ibm",
       image:
-        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633258227/smart_city_hackathon/1.jpg",
-      title: "Smart City Hackathon 2018",
-      description: "Won the Best Prototype Award for the application.",
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633255380/ibm/1.jpg",
+      title: "IBM Hack 2019 Challenge",
+      description: "Won the Best UI/UX Award in IBM Hack 2k19.",
     },
     {
+      //Change this to sih_2019 later on
+      id: "sih1_2019",
+      image:
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633258227/ai_club/1.jpg",
+      title: "Smart India Hackathon 2019",
+      description: "Runner-Ups for building an Energy Management System.",
+    },
+    {
+      id: "ai_club",
       image:
         "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633258227/ai_club/1.jpg",
       title: "AI Club Inauguration",
       description: "Organized & Initiated the AI Club in the college.",
+    },
+    {
+      id: "nasa_2018",
+      image:
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633258227/ai_club/1.jpg",
+      title: "Nasa Space Apps Hackathon 2018",
+      description: "Won the first place for building an Mars Environment Game.",
+    },
+    {
+      id: "excite",
+      image:
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633258227/ai_club/1.jpg",
+      title: "Excite 2018",
+      description: "A 60-Day Workshop on Product Development.",
+    },
+    {
+      id: "smart_city_hackathon",
+      images: 4,
+      image:
+        "https://res.cloudinary.com/dfq0wyslj/image/upload/v1633258227/smart_city_hackathon/1.jpg",
+      title: "Smart City Hackathon 2018",
+      description: "Won the Best Prototype Award for the application.",
     },
   ];
 
@@ -57,7 +83,7 @@ const Gallery = () => {
                 <div key={event.title}>
                   <div
                     className={
-                      "h-80 lg:h-96 filter hover:saturate-[1.25] transition duration-500  origin-center ease-in-out transform hover:-translate-y-1 hover:scale-80"
+                      "h-80 lg:h-96 filter grayscale hover:grayscale-0 transition duration-500  origin-center ease-in-out transform hover:-translate-y-1 hover:scale-80"
                     }
                     style={{
                       width: "100%",
@@ -65,7 +91,7 @@ const Gallery = () => {
                     }}
                   >
                     <Image
-                      src={event.image}
+                      src={`https://res.cloudinary.com/dfq0wyslj/image/upload/${event.id}/1.jpg`}
                       alt={`${event.title} Image`}
                       layout={"fill"}
                       className={" rounded-lg"}
