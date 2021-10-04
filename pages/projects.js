@@ -4,40 +4,28 @@ import Head from "next/head";
 const Projects = () => {
   const sampleProjects = [
     {
-      title: "Project",
-      description: "Machine of an evasive procedure, lower the pattern!",
-      github: "https://github.com/",
-      technologies: ["react"],
+      id: "esocr",
+      title: "Exact Sciences OCR",
+      description:
+        "Built an OCR Solution for Exact Sciences to automating the patients data directly into the system rather than manual input.",
+      github: "https://github.com/ashfaqnisar/ESOCR",
+      technologies: ["react", "nodejs", "nanonets"],
     },
     {
-      title: "Project",
-      description: "Machine of an evasive procedure, lower the pattern!",
-      github: "https://github.com/",
-      technologies: ["react"],
+      id: "adani",
+      title: "Adani Ports Invoicing System",
+      description:
+        "Built the invoicing system, to deal with invoices, payments, settlements and managing money in the wallets for Adani Ports during Hackathon",
+      github: "https://github.com/invoicing-system",
+      technologies: ["react", "Firestore", "nodejs", "razorpay"],
     },
     {
-      title: "Project",
-      description: "Machine of an evasive procedure, lower the pattern!",
-      github: "https://github.com/",
-      technologies: ["react"],
-    },
-    {
-      title: "Project",
-      description: "Machine of an evasive procedure, lower the pattern!",
-      github: "https://github.com/",
-      technologies: ["react"],
-    },
-    {
-      title: "Project",
-      description: "Machine of an evasive procedure, lower the pattern!",
-      github: "https://github.com/",
-      technologies: ["react"],
-    },
-    {
-      title: "Project",
-      description: "Machine of an evasive procedure, lower the pattern!",
-      github: "https://github.com/",
-      technologies: ["react"],
+      id: "enimo",
+      title: "Enimo",
+      description:
+        "Developed the app for managing & monitoring the amount of energy consumed by the appliances.",
+      github: "https://github.com/ashfaqnisar/enimo",
+      technologies: ["react", "firestore", "pyrebase"],
     },
   ];
   return (
@@ -46,7 +34,7 @@ const Projects = () => {
         <title>Ashfaq Nisar - Projects</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={"flex bg-black"}>
+      <main className={"flex bg-black mt-20 md:mt-0"}>
         <div className={"container px-4 sm:mx-auto "}>
           {/*Todo: Add a back button*/}
           <div className={"py-5 md:py-6"}>
@@ -61,14 +49,44 @@ const Projects = () => {
           >
             {sampleProjects.map((project) => {
               return (
-                <a key={project.title} href={project.link}>
-                  <div className={"py-5 px-4 border border-white rounded-md"}>
-                    <h3 className={"text-xl text-white font-medium"}>
-                      {project.title}
-                    </h3>
-                    <h5 className={"text-gray-300"}>{project.description}</h5>
+                <div
+                  key={project.id}
+                  className={"py-5 px-4 border border-white rounded-md"}
+                >
+                  <h3 className={"text-xl text-white font-medium"}>
+                    {project.title}
+                  </h3>
+                  <h5 className={"text-gray-300 "}>{project.description}</h5>
+                  <div className={"pt-2 block"}>
+                    {project.technologies.map((technology, index) => {
+                      return (
+                        <p
+                          key={technology}
+                          className={"capitalize"}
+                          style={{ display: "inline" }}
+                        >
+                          {technology}
+                          {project.technologies.length !== index + 1 && (
+                            <>&ensp;|&ensp;</>
+                          )}
+                        </p>
+                      );
+                    })}
                   </div>
-                </a>
+                  <div className={"pt-2"}>
+                    <a
+                      key={project.id}
+                      href={project.github}
+                      target={"_blank"}
+                      rel="noreferrer"
+                      className={
+                        "font-bold border-b-2 border-black hover:border-dracula-green-main hover:text-dracula-green-main transition duration-500  origin-center ease-in-out hover:-translate-y-1"
+                      }
+                    >
+                      View Project
+                    </a>
+                  </div>
+                </div>
               );
             })}
           </div>
