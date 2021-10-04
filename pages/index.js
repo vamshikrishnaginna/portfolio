@@ -50,7 +50,8 @@ const Home = () => {
         <title>Ashfaq Nisar</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={"flex flex-grow bg-black"}>
+
+      <main className={"flex flex-grow bg-black mt-20 md:mt-0"}>
         <div className="container mx-auto flex flex-col-reverse flex-grow md:flex-row text-center md:text-left justify-center md:justify-evenly items-center ">
           <div className={"flex flex-col space-y-5 "}>
             <h1 className="text-2xl sm:text-3xl text-white">

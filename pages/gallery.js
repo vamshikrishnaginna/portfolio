@@ -59,7 +59,7 @@ const Gallery = () => {
         <title>Ashfaq Nisar - Gallery</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={"flex bg-black"}>
+      <main className={"flex bg-black mt-20 md:mt-0"}>
         <div className={"container px-4 sm:mx-auto "}>
           {/*Todo: Add a back button*/}
           <div className={"py-5 md:py-6"}>
