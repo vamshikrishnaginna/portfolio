@@ -24,7 +24,7 @@ const Gallery = () => {
     {
       id: "ibm",
       title: "IBM Hack 2019 Challenge",
-      description: "Won the Best UI/UX Award in IBM Hack 2k19.",
+      description: "Won the Best UI/UX Award in IBM Hack 2019.",
     },
     {
       id: "sih_2019",
