@@ -2,6 +2,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { Fragment, useRef } from "react";
+import { AiOutlineDownload as DownloadIcon } from "react-icons/ai";
 
 const TopBar = () => {
   const links = [
@@ -24,6 +25,8 @@ const TopBar = () => {
     },
   ];
   const buttonRef = useRef();
+  const resumeLink =
+    "https://drive.google.com/file/d/1IygTH99vSZuMAnecgD9C0WedsSnPDcPE/view";
   return (
     <Popover className="fixed w-full md:relative bg-dracula-darker z-50 block">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -51,10 +54,12 @@ const TopBar = () => {
             ))}
 
             <a
-              href="#"
+              href={resumeLink}
+              target="_blank"
               className="ml-8 inline-flex items-center justify-center px-4 py-2  rounded-md shadow-sm text-base font-medium text-black bg-dracula-green-main hover:bg-dracula-green-dark"
+              rel="noreferrer"
             >
-              Resume
+              <DownloadIcon className={"mr-2"} size={18} /> Resume
             </a>
           </div>
         </div>
@@ -112,10 +117,12 @@ const TopBar = () => {
               </div>
               <div>
                 <a
-                  href="#"
+                  href={resumeLink}
+                  target="_blank"
                   className="w-full font-bold flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base text-black bg-dracula-green-main hover:bg-dracula-green-dark"
+                  rel="noreferrer"
                 >
-                  Resume
+                  <DownloadIcon className={"mr-2"} size={18} /> Resume
                 </a>
               </div>
             </div>
