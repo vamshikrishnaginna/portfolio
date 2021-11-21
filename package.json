@@ -1,5 +1,7 @@
 {
+  "name": "ashfaqnisar-portfolio",
   "private": true,
+  "author": "ashfaqnisar <ashfaqnisar00@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -8,22 +10,22 @@
     "pre-commit": "next lint --fix"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.0",
-    "@heroicons/react": "^1.0.4",
-    "next": "latest",
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "next": "^12.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "eslint": "^7.31.0",
-    "eslint-config-next": "^11.0.1",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^7.0.1",
-    "postcss": "^8.3.5",
-    "prettier": "2.3.2",
-    "tailwindcss": "^2.2.16"
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19"
   }
 }

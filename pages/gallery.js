@@ -65,7 +65,7 @@ const Gallery = () => {
     {
       id: "smart_city_hackathon",
       title: "Smart City Hackathon 2018",
-      description: "Won the Best Prototype Award for the application.",
+      description: "Won the Best Marketing Award for the application.",
     },
   ];
   const imageTemplate = "https://res.cloudinary.com/dfq0wyslj/image/upload";
