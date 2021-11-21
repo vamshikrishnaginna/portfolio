@@ -13,18 +13,28 @@ const Gallery = () => {
     {
       id: "cloud_study_jam_1",
       title: "Cloud Study Jam",
-      description: "Conducted an workshop on Google Cloud",
+      description: "Conducted a workshop on Google Cloud",
     },
     {
       id: "devfest_2019",
       title: "Devfest 2019",
       description:
-        "Enjoyed meeting people & learning about various technologies.",
+        "Enjoyed meeting people & learning about various technical stuff.",
+    },
+    {
+      id: "jetbrains_day_2019",
+      title: "Jetbrains Day 2019",
+      description: "Loved the whole thing and had a lot of fun at the event!",
     },
     {
       id: "ibm",
       title: "IBM Hack 2019 Challenge",
       description: "Won the Best UI/UX Award in IBM Hack 2019.",
+    },
+    {
+      id: "helping_hands_hackathon",
+      title: "Helping Hands Hackathon",
+      description: "Participated in this hackathon to support the orphanages",
     },
     {
       id: "sih_2019",
@@ -34,12 +44,18 @@ const Gallery = () => {
     {
       id: "ai_club",
       title: "AI Club Inauguration",
-      description: "Organized & Initiated the AI Club in the college.",
+      description: "Initiated and organized the AI Club in the college.",
+    },
+    {
+      id: "workshop_for_freshers",
+      title: "Workshop for freshers.",
+      description:
+        "Conducted the workshop to help out freshers and explain different paths & technologies.",
     },
     {
       id: "nasa_2018",
       title: "Nasa Space Apps Hackathon 2018",
-      description: "Won the first place for building an Mars Environment Game.",
+      description: "Won first place for building a Mars-like Environment Game.",
     },
     {
       id: "excite",
@@ -52,6 +68,7 @@ const Gallery = () => {
       description: "Won the Best Prototype Award for the application.",
     },
   ];
+  const imageTemplate = "https://res.cloudinary.com/dfq0wyslj/image/upload";
 
   return (
     <>
@@ -85,7 +102,7 @@ const Gallery = () => {
                     }}
                   >
                     <Image
-                      src={`https://res.cloudinary.com/dfq0wyslj/image/upload/${event.id}/1.jpg`}
+                      src={`${imageTemplate}/${event.id}/1.jpg`}
                       alt={`${event.title} Image`}
                       layout={"fill"}
                       className={" rounded-lg"}
