@@ -23,14 +23,14 @@ const TopBar = () => {
     {
       name: "Gallery",
       href: "/gallery",
-      color: "hover:border-dracula-purple hover:text-dracula-purple",
-      linkActive: "border-dracula-purple text-dracula-purple",
+      color: "hover:border-dracula-cyan hover:text-dracula-cyan",
+      linkActive: "border-dracula-cyan text-dracula-cyan",
     },
     {
       name: "About",
       href: "/about",
-      color: "hover:border-dracula-cyan hover:text-dracula-cyan",
-      linkActive: "border-dracula-cyan text-dracula-cyan",
+      color: "hover:border-dracula-purple hover:text-dracula-purple",
+      linkActive: "border-dracula-purple text-dracula-purple",
     },
   ];
   const buttonRef = useRef();
