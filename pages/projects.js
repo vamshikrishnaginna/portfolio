@@ -118,7 +118,7 @@ const Projects = () => {
                         target={"_blank"}
                         rel="noreferrer"
                         className={
-                          "font-bold border-b-2 border-black hover:border-dracula-green-main hover:text-dracula-green-main transition duration-500  origin-center ease-in-out hover:-translate-y-1"
+                          "font-bold border-b-2 border-black hover:border-dracula-green-main text-dracula-green-main transition duration-500  origin-center ease-in-out hover:-translate-y-1"
                         }
                       >
                         View Project

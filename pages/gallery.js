@@ -94,7 +94,7 @@ const Gallery = () => {
                 <div key={event.title}>
                   <div
                     className={
-                      "h-80 md:h-[65] xl:h-[70] filter grayscale hover:grayscale-0 transition duration-500  origin-center ease-in-out transform hover:-translate-y-1 hover:scale-80"
+                      "h-80 md:h-[65] xl:h-[70] text-white hover:text-dracula-cyan filter grayscale hover:grayscale-0 transition duration-500  origin-center ease-in-out transform hover:-translate-y-1 hover:scale-80"
                     }
                     style={{
                       width: "100%",
@@ -113,14 +113,16 @@ const Gallery = () => {
                     />
                     <div
                       className={
-                        "py-2 px-3 absolute bottom-0 bg-gradient-to-b from-transparent via-[#00000087] to-[#060606] "
+                        "py-3 px-3 absolute bottom-0 bg-gradient-to-b from-black/[.05] via-[#00000087] to-[#060606] "
                       }
                       style={{ width: "100%" }}
                     >
-                      <h3 className={"text-xl text-white font-medium"}>
+                      <h3 className={"text-xl font-semibold "}>
                         {event.title}
                       </h3>
-                      <h5 className={"text-gray-300"}>{event.description}</h5>
+                      <h5 className={"text-gray-300 font-medium"}>
+                        {event.description}
+                      </h5>
                     </div>
                   </div>
                 </div>
