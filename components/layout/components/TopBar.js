@@ -3,30 +3,42 @@ import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { Fragment, useRef } from "react";
 import { AiOutlineDownload as DownloadIcon } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 const TopBar = () => {
   const links = [
     {
       name: "Home",
       description: "Home",
+      color: "hover:border-dracula-pink hover:text-dracula-pink",
+      linkActive: "border-dracula-pink text-dracula-pink",
       href: "/",
     },
     {
       name: "Projects",
       href: "/projects",
+      color: "hover:border-dracula-green-main hover:text-dracula-green-main",
+      linkActive: "border-dracula-green-main text-dracula-green-main",
     },
     {
       name: "Gallery",
       href: "/gallery",
+      color: "hover:border-dracula-purple hover:text-dracula-purple",
+      linkActive: "border-dracula-purple text-dracula-purple",
     },
     {
       name: "About",
       href: "/about",
+      color: "hover:border-dracula-cyan hover:text-dracula-cyan",
+      linkActive: "border-dracula-cyan text-dracula-cyan",
     },
   ];
   const buttonRef = useRef();
   const resumeLink =
     "https://drive.google.com/file/d/1IygTH99vSZuMAnecgD9C0WedsSnPDcPE/view";
+
+  const { pathname } = useRouter();
+
   return (
     <Popover className="fixed w-full md:relative bg-dracula-darker z-50 block">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -45,13 +57,19 @@ const TopBar = () => {
             </Popover.Button>
           </div>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 space-x-8">
-            {links.map((item) => (
-              <Link key={item.name} href={item.href}>
-                <a className="text-lg font-medium text-white hover:text-dracula-pink border-b-2 border-dracula-darker hover:border-dracula-pink transition duration-500 ease-in-out">
-                  {item.name}
-                </a>
-              </Link>
-            ))}
+            {links.map((item) => {
+              return (
+                <Link key={item.name} href={item.href}>
+                  <a
+                    className={`text-lg font-medium text-white border-b-2 border-dracula-darker transition duration-500 ease-in-out ${
+                      pathname === item.href && item.linkActive
+                    } ${item.color} `}
+                  >
+                    {item.name}
+                  </a>
+                </Link>
+              );
+            })}
 
             <a
               href={resumeLink}
@@ -108,7 +126,9 @@ const TopBar = () => {
                   <Link key={item.name} href={item.href}>
                     <a
                       onClick={() => buttonRef.current?.click()}
-                      className="text-lg font-bold text-white hover:text-dracula-pink border-b-2 border-dracula-darker hover:border-dracula-pink transition duration-500 ease-in-out"
+                      className={`text-lg font-bold text-white border-b-2 border-dracula-darker transition duration-500 ease-in-out ${
+                        pathname === item.href && item.linkActive
+                      } ${item.color} `}
                     >
                       {item.name}
                     </a>
