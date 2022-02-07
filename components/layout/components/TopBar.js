@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Fragment, useRef } from "react";
 import { AiOutlineDownload as DownloadIcon } from "react-icons/ai";
 import { useRouter } from "next/router";
+import { logEvent } from "../../../utils/analytics";
 
 const TopBar = () => {
   const links = [
@@ -73,6 +74,12 @@ const TopBar = () => {
 
             <a
               href={resumeLink}
+              onClick={() =>
+                logEvent({
+                  action: "downloaded_resume",
+                  params: {},
+                })
+              }
               target="_blank"
               className="ml-8 inline-flex items-center justify-center px-4 py-2  rounded-md shadow-sm text-base font-medium text-black bg-dracula-green-main hover:bg-dracula-green-dark"
               rel="noreferrer"
@@ -138,6 +145,12 @@ const TopBar = () => {
               <div>
                 <a
                   href={resumeLink}
+                  onClick={() =>
+                    logEvent({
+                      action: "downloaded_resume_mobile",
+                      params: {},
+                    })
+                  }
                   target="_blank"
                   className="w-full font-bold flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base text-black bg-dracula-green-main hover:bg-dracula-green-dark"
                   rel="noreferrer"
