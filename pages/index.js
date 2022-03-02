@@ -86,7 +86,7 @@ const Home = () => {
           </div>
           <div className="w-60 md:w-72 mb-2">
             <Image
-              src={"/images/profile.png "}
+              src={"/images/profile.png"}
               alt={"Picture of Ashfaq"}
               width={"288"}
               height={"288"}
