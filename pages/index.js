@@ -6,6 +6,7 @@ import {
   AiOutlineInstagram,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaStackOverflow } from "react-icons/fa";
 import { cloneElement } from "react";
@@ -31,6 +32,11 @@ const Home = () => {
       name: "LinkedIn",
       icon: <AiFillLinkedin />,
       link: "https://www.linkedin.com/in/ashfaqnisar/",
+    },
+    {
+      name: "Leetcode",
+      icon: <SiLeetcode />,
+      link: "https://leetcode.com/ashfaqnisar/",
     },
     {
       name: "Twitter",
