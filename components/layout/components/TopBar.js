@@ -10,28 +10,23 @@ const TopBar = () => {
   const links = [
     {
       name: "Home",
-      description: "Home",
-      color: "hover:border-dracula-pink hover:text-dracula-pink",
-      linkActive: "border-dracula-pink text-dracula-pink",
+      color: "dracula-pink",
       href: "/",
     },
     {
       name: "Projects",
       href: "/projects",
-      color: "hover:border-dracula-green-main hover:text-dracula-green-main",
-      linkActive: "border-dracula-green-main text-dracula-green-main",
+      color: "dracula-green-main",
     },
     {
       name: "Gallery",
       href: "/gallery",
-      color: "hover:border-dracula-cyan hover:text-dracula-cyan",
-      linkActive: "border-dracula-cyan text-dracula-cyan",
+      color: "dracula-cyan",
     },
     {
       name: "About",
       href: "/about",
-      color: "hover:border-dracula-purple hover:text-dracula-purple",
-      linkActive: "border-dracula-purple text-dracula-purple",
+      color: "dracula-purple",
     },
   ];
   const buttonRef = useRef();
@@ -41,30 +36,32 @@ const TopBar = () => {
   const { pathname } = useRouter();
 
   return (
-    <Popover className="fixed w-full md:relative bg-dracula-darker z-50 block">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10 z-50">
+    <Popover className="fixed z-50 block w-full bg-dracula-darker md:relative">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="z-50 flex items-center justify-between py-4 md:space-x-10 md:justify-start">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
-              <a className="text-3xl font-bold px-1 py-1 rounded-md bg-white text-black">
+              <a className="rounded-md bg-white px-1 py-1 text-3xl font-bold text-black">
                 AN
               </a>
             </Link>
           </div>
-          <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-dracula-darker rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-dracula-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-dracula-green-main">
+          <div className="-my-2 -mr-2 md:hidden">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 bg-dracula-darker hover:bg-dracula-dark hover:text-gray-500 focus:ring-dracula-green-main focus:outline-none focus:ring-2 focus:ring-inset">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 space-x-8">
+          <div className="hidden items-center justify-end space-x-8 md:flex md:flex-1 lg:w-0">
             {links.map((item) => {
               return (
                 <Link key={item.name} href={item.href}>
                   <a
-                    className={`text-lg font-medium text-white border-b-2 border-dracula-darker transition duration-500 ease-in-out ${
-                      pathname === item.href && item.linkActive
-                    } ${item.color} `}
+                    className={`text-lg font-medium text-white border-b-2 transition duration-500 ease-in-out ${
+                      pathname === item.href
+                        ? `text-${item.color} border-${item.color}`
+                        : "border-dracula-darker"
+                    } hover:text-${item.color}`}
                   >
                     {item.name}
                   </a>
@@ -81,7 +78,7 @@ const TopBar = () => {
                 })
               }
               target="_blank"
-              className="ml-8 inline-flex items-center justify-center px-4 py-2  rounded-md shadow-sm text-base font-medium text-black bg-dracula-green-main hover:bg-dracula-green-dark"
+              className="ml-8 inline-flex items-center justify-center rounded-md px-4 py-2 text-base font-medium text-black shadow-sm bg-dracula-green-main hover:bg-dracula-green-dark"
               rel="noreferrer"
             >
               <DownloadIcon className={"mr-2"} size={18} /> Resume
@@ -101,16 +98,16 @@ const TopBar = () => {
       >
         <Popover.Panel
           focus
-          className="fixed absolute top-0 inset-x-0 p-2 transition transform origin-top-right  md:hidden z-50 "
+          className="fixed absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition md:hidden"
         >
-          <div className="rounded-lg shadow-lg ring-2 ring-white ring-opacity-5 bg-dracula-darker divide-y-2  divide-gray-50">
-            <div className="pt-5 pb-6 px-5">
+          <div className="rounded-lg shadow-lg ring-2 ring-white ring-opacity-5 bg-dracula-darker divide-y-2 divide-gray-50">
+            <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
                   <Link href="/">
                     <a
                       className={
-                        "text-3xl font-bold px-1 py-1 rounded-md bg-white text-black"
+                        "rounded-md bg-white px-1 py-1 text-3xl font-bold text-black"
                       }
                     >
                       AN
@@ -118,7 +115,7 @@ const TopBar = () => {
                   </Link>
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-dracula-darker rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-dracula-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-dracula-green-main">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 bg-dracula-darker hover:bg-dracula-dark hover:text-gray-500 focus:ring-dracula-green-main focus:outline-none focus:ring-2 focus:ring-inset">
                     <span className="sr-only" ref={buttonRef}>
                       Close menu
                     </span>
@@ -127,15 +124,17 @@ const TopBar = () => {
                 </div>
               </div>
             </div>
-            <div className="py-6 px-5 space-y-6">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
+            <div className="px-5 py-6 space-y-6">
+              <div className="grid grid-cols-2 gap-x-8 gap-y-4">
                 {links.map((item) => (
                   <Link key={item.name} href={item.href}>
                     <a
                       onClick={() => buttonRef.current?.click()}
-                      className={`text-lg font-bold text-white border-b-2 border-dracula-darker transition duration-500 ease-in-out ${
-                        pathname === item.href && item.linkActive
-                      } ${item.color} `}
+                      className={`text-lg font-medium text-white border-b-2 transition duration-500 ease-in-out ${
+                        pathname === item.href
+                          ? `text-${item.color} border-${item.color}`
+                          : "border-dracula-darker"
+                      } hover:text-${item.color}`}
                     >
                       {item.name}
                     </a>
@@ -152,7 +151,7 @@ const TopBar = () => {
                     })
                   }
                   target="_blank"
-                  className="w-full font-bold flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base text-black bg-dracula-green-main hover:bg-dracula-green-dark"
+                  className="flex w-full items-center justify-center rounded-md px-4 py-2 text-base font-bold text-black shadow-sm bg-dracula-green-main hover:bg-dracula-green-dark"
                   rel="noreferrer"
                 >
                   <DownloadIcon className={"mr-2"} size={18} /> Resume
