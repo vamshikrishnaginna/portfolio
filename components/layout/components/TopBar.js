@@ -7,33 +7,42 @@ import { useRouter } from "next/router";
 import { logEvent } from "../../../utils/analytics";
 
 const TopBar = () => {
-  const links = [
+  const { pathname } = useRouter();
+
+  const buttonRef = useRef();
+  const resumeLink =
+    "https://drive.google.com/file/d/1IygTH99vSZuMAnecgD9C0WedsSnPDcPE/view";
+
+  let links = [
     {
       name: "Home",
-      color: "dracula-pink",
       href: "/",
+      color: "dracula-pink",
+      linkActive: "text-dracula-pink border-dracula-pink",
+      linkInactive: "hover:text-dracula-pink",
     },
     {
       name: "Projects",
       href: "/projects",
       color: "dracula-green-main",
+      linkActive: "text-dracula-green-main border-dracula-green-main",
+      linkInactive: "hover:text-dracula-green-main",
     },
     {
       name: "Gallery",
       href: "/gallery",
       color: "dracula-cyan",
+      linkActive: "text-dracula-cyan border-dracula-cyan",
+      linkInactive: "hover:text-dracula-cyan",
     },
     {
       name: "About",
       href: "/about",
       color: "dracula-purple",
+      linkActive: "text-dracula-purple border-dracula-purple",
+      linkInactive: "hover:text-dracula-purple",
     },
   ];
-  const buttonRef = useRef();
-  const resumeLink =
-    "https://drive.google.com/file/d/1IygTH99vSZuMAnecgD9C0WedsSnPDcPE/view";
-
-  const { pathname } = useRouter();
 
   return (
     <Popover className="fixed z-50 block w-full bg-dracula-darker md:relative">
@@ -57,11 +66,12 @@ const TopBar = () => {
               return (
                 <Link key={item.name} href={item.href}>
                   <a
-                    className={`text-lg font-medium text-white border-b-2 transition duration-500 ease-in-out ${
-                      pathname === item.href
-                        ? `text-${item.color} border-${item.color}`
-                        : "border-dracula-darker"
-                    } hover:text-${item.color}`}
+                    className={
+                      "text-lg font-medium border-b-2 border-dracula-darker transition duration-500 ease-in-out" +
+                      (pathname === item.href
+                        ? ` ${item.linkActive}`
+                        : ` ${item.linkInactive}`)
+                    }
                   >
                     {item.name}
                   </a>
@@ -130,11 +140,12 @@ const TopBar = () => {
                   <Link key={item.name} href={item.href}>
                     <a
                       onClick={() => buttonRef.current?.click()}
-                      className={`text-lg font-medium text-white border-b-2 transition duration-500 ease-in-out ${
-                        pathname === item.href
-                          ? `text-${item.color} border-${item.color}`
-                          : "border-dracula-darker"
-                      } hover:text-${item.color}`}
+                      className={
+                        "text-lg font-medium border-b-2 border-dracula-darker transition duration-500 ease-in-out" +
+                        (pathname === item.href
+                          ? ` ${item.linkActive}`
+                          : ` ${item.linkInactive}`)
+                      }
                     >
                       {item.name}
                     </a>
