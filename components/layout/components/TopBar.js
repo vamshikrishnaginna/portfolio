@@ -5,6 +5,7 @@ import { Fragment, useRef } from "react";
 import { AiOutlineDownload as DownloadIcon } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { logEvent } from "../../../utils/analytics";
+import cx from "classnames";
 
 const TopBar = () => {
   const { pathname } = useRouter();
@@ -17,28 +18,24 @@ const TopBar = () => {
     {
       name: "Home",
       href: "/",
-      color: "dracula-pink",
       linkActive: "text-dracula-pink border-dracula-pink",
       linkInactive: "hover:text-dracula-pink",
     },
     {
       name: "Projects",
       href: "/projects",
-      color: "dracula-green-main",
       linkActive: "text-dracula-green-main border-dracula-green-main",
       linkInactive: "hover:text-dracula-green-main",
     },
     {
       name: "Gallery",
       href: "/gallery",
-      color: "dracula-cyan",
       linkActive: "text-dracula-cyan border-dracula-cyan",
       linkInactive: "hover:text-dracula-cyan",
     },
     {
       name: "About",
       href: "/about",
-      color: "dracula-purple",
       linkActive: "text-dracula-purple border-dracula-purple",
       linkInactive: "hover:text-dracula-purple",
     },
@@ -66,12 +63,12 @@ const TopBar = () => {
               return (
                 <Link key={item.name} href={item.href}>
                   <a
-                    className={
-                      "text-lg font-medium border-b-2 border-dracula-darker transition duration-500 ease-in-out" +
-                      (pathname === item.href
-                        ? ` ${item.linkActive}`
-                        : ` ${item.linkInactive}`)
-                    }
+                    className={cx(
+                      "text-lg font-medium border-b-2 transition duration-500 ease-in-out",
+                      pathname === item.href
+                        ? item.linkActive
+                        : item.linkInactive + " border-dracula-darker",
+                    )}
                   >
                     {item.name}
                   </a>
@@ -143,8 +140,8 @@ const TopBar = () => {
                       className={
                         "text-lg font-medium border-b-2 border-dracula-darker transition duration-500 ease-in-out" +
                         (pathname === item.href
-                          ? ` ${item.linkActive}`
-                          : ` ${item.linkInactive}`)
+                          ? ` text-${item.color}`
+                          : ` hover:text-${item.color}`)
                       }
                     >
                       {item.name}
