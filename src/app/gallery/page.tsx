@@ -160,11 +160,7 @@ const EventCard = ({ event }: EventCardProps) => {
       />
       <div className={"p-4"}>
         <h1 className={"text-sm font-bold duration-150 sm:text-base 2xl:text-lg"}>{event.title}</h1>
-        <p
-          className={
-            "text-xs text-gray-600 duration-150 dark:text-gray-400  sm:text-sm 2xl:text-base"
-          }
-        >
+        <p className={"text-xs text-gray-400 duration-150  sm:text-sm 2xl:text-base"}>
           {event.description}
         </p>
       </div>
