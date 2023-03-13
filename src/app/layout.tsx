@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import { Inter, Roboto_Mono } from "@next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import TopBar from "./topbar";
 
 const inter = Inter({
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className={"bg-black/60"}>
         <TopBar />
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );
