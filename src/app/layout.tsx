@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
-import { Inter, Roboto_Mono } from "@next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import TopBar from "./topbar";
 
