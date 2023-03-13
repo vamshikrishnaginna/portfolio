@@ -89,7 +89,7 @@ const Page = () => {
               Email
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1IygTH99vSZuMAnecgD9C0WedsSnPDcPE/view"
+              href={"Ashfaq_Resume.pdf"}
               target={"_blank"}
               className="hover:drop-shadow-cta inline-block space-x-2 rounded bg-zinc-50 px-4 py-1.5 text-base font-semibold leading-7 text-zinc-800 ring-1 ring-transparent  transition-all duration-150 hover:bg-zinc-900/20 hover:text-zinc-100 hover:ring-zinc-600/80  sm:w-1/3 sm:text-center"
             >

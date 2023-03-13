@@ -18,7 +18,7 @@ const navigation = [
   },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1IygTH99vSZuMAnecgD9C0WedsSnPDcPE/view",
+    href: "Ashfaq_Resume.pdf",
     external: true
   }
 ] satisfies { name: string; href: string; external?: boolean }[];
