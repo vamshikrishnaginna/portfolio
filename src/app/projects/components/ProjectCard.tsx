@@ -34,13 +34,11 @@ const ProjectCard = (props: {
           href={repo}
           target={"_blank"}
           className={
-            "inline-flex flex-row gap-1 align-middle text-xs font-semibold text-neutral-300 duration-200 hover:text-white 2xl:text-sm"
+            "inline-flex flex-row items-center gap-1 text-xs font-semibold text-neutral-300 duration-200 hover:text-white 2xl:text-sm"
           }
         >
-          <span>
-            <AiFillGithub size={15} />
-          </span>
-          Repo
+          <AiFillGithub size={18} />
+          <span>Repo</span>
         </Link>
       )}
     </div>
