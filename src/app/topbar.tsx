@@ -42,7 +42,7 @@ const Topbar: React.FC = () => {
               {navigation.map((item) => (
                 <li className="" key={item.href}>
                   <Link
-                    className={`flex items-center py-2 px-2 text-sm duration-200 hover:text-zinc-50 sm:px-3 sm:text-base
+                    className={`flex items-center px-2 py-2 text-sm duration-200 hover:text-zinc-50 sm:px-3 sm:text-base
                     ${pathname === item.href ? "font-medium text-zinc-50" : "text-zinc-400"}`}
                     href={item.href}
                     target={item.external ? "_blank" : undefined}
