@@ -6,11 +6,13 @@ import TopBar from "./topbar";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
   display: "optional"
 });
 
 const roboto_mono = Roboto_Mono({
   variable: "--font-roboto-mono",
+  subsets: ["latin"],
   display: "optional"
 });
 

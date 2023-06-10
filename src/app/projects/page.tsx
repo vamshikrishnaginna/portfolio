@@ -1,6 +1,14 @@
 import ProjectCard from "@/app/projects/components/ProjectCard";
 
-const projects = [
+const projects: {
+  id: string;
+  name: string;
+  description: string;
+  tags: string[];
+  repo?: string;
+  image?: string;
+  website?: string;
+}[] = [
   {
     id: "order_management_system",
     name: "Order Management System",
@@ -14,8 +22,8 @@ const projects = [
     description:
       "ESOCR was a COTS OCR solution designed to extract information from both handwritten and system-generated patient application forms and insert it into the system, in-order to reduce human error and time needed for manual data entry.",
     repo: "https://github.com/ashfaqnisar/ESOCR",
-    website: "https://esocr.vercel.app/",
-    tags: ["react", "express", "nanonets", "firebase"]
+    tags: ["react", "express", "nanonets", "firebase"],
+    website: "https://esocr.vercel.app/"
   },
   {
     id: "return_order_system",
@@ -45,7 +53,7 @@ const projects = [
     description:
       "Built a dynamic website for the DSC (Developer Student Club), which was integrated with the GDG Aura Community Dashboard. Due to this integration, we were able to leverage additional features from the dashboard, including seamless management of workshops, teams, and custom pages for the events",
     repo: "https://github.com/ashfaqnisar/dsc-vjit-website",
-    tags: ["next JS", "firestore", "firebase Functions", "vue JS"]
+    tags: ["next JS", "firestore", "Vue JS"]
   },
   {
     id: "kiosk",
