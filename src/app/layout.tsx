@@ -8,13 +8,13 @@ import type { Metadata } from "next";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  display: "optional"
+  display: "swap"
 });
 
 const roboto_mono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
-  display: "optional"
+  display: "swap"
 });
 
 export const metadata: Metadata = {
