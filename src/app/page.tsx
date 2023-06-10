@@ -58,7 +58,7 @@ const socialLinks = [
 const Page = () => {
   return (
     <div className="flex flex-col gap-8 px-4 pb-8 md:gap-16 md:pb-16 xl:pb-24">
-      <div className="mx-auto mt-8 flex max-w-4xl flex-col-reverse items-center justify-center gap-y-8 gap-x-10 sm:mt-0  sm:min-h-screen sm:px-0 md:flex-row lg:gap-x-16">
+      <div className="mx-auto mt-8 flex max-w-4xl flex-col-reverse items-center justify-center gap-x-10 gap-y-8 sm:mt-0  sm:min-h-screen sm:px-0 md:flex-row lg:gap-x-16">
         <div className={"flex flex-col gap-4"}>
           <div className={"space-y-2"}>
             <h1 className="text-center text-xl text-white duration-150 sm:text-left sm:text-2xl">

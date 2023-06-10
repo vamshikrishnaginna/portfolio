@@ -1,5 +1,7 @@
 import ProjectCard from "@/app/projects/components/ProjectCard";
 
+import type { Metadata } from "next";
+
 const projects: {
   id: string;
   name: string;
@@ -79,6 +81,11 @@ const projects: {
     tags: ["UnrealEngine", "C#"]
   }
 ];
+
+export const metadata: Metadata = {
+  title: "Ashfaq Nisar - Projects",
+  description: "Projects developed by Ashfaq Nisar"
+};
 
 const Page = () => {
   return (

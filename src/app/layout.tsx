@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { Inter, Roboto_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import TopBar from "./topbar";
+import type { Metadata } from "next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,6 +16,16 @@ const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
   display: "optional"
 });
+
+export const metadata: Metadata = {
+  title: "Ashfaq Nisar",
+  description: "Portfolio of Ashfaq Nisar",
+  openGraph: {
+    title: "Ashfaq Nisar",
+    description: "Portfolio of Ashfaq Nisar",
+    type: "website"
+  }
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

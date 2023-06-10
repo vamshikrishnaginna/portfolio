@@ -1,4 +1,7 @@
 import Image from "next/image";
+
+import type { Metadata } from "next";
+
 const events = [
   {
     id: "devfest_2022",
@@ -11,8 +14,12 @@ const events = [
   },
   {
     id: "vjit_2020",
-    title: "VJIT Hackathon 2020",
-    description: "Organized & Mentored the hackathon participants.",
+    title: "VJIT Hackathon 2021",
+    description:
+      "I had an amazing time helping students navigate various issues, providing guidance, and mentoring them throughout the 24-hour hackathon.",
+    // description:
+    //   "Organized and mentored aspiring participants in an atmosphere, where creativity and problem-solving skills flourished. Witnessing the participants' dedication and innovative solutions was truly inspiring.",
+    // description: "Organized & Mentored the hackathon participants.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/vjit_2020/1.jpg",
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/vjit_2020/2.jpg",
@@ -22,7 +29,8 @@ const events = [
   {
     id: "cloud_study_jam_1",
     title: "Cloud Study Jam",
-    description: "Conducted a workshop on Google Cloud",
+    description:
+      "Conducted an engaging workshop on Google Cloud, talking about the immense potential of cloud technologies.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/cloud_study_jam_1/1.jpg",
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/cloud_study_jam_1/2.jpg",
@@ -51,7 +59,8 @@ const events = [
   {
     id: "jetbrains_day_2019",
     title: "Jetbrains Day 2019",
-    description: "Loved the whole thing and had a lot of fun at the event!",
+    description:
+      "Indulged in a day filled with fascinating talks, exciting demo's. Loved the whole thing and had a lot of fun at the event!",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_north/jetbrains_day_2019/1.jpg",
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/jetbrains_day_2019/2.jpg",
@@ -61,7 +70,8 @@ const events = [
   {
     id: "ibm",
     title: "IBM Hack 2019 Challenge",
-    description: "Won the Best UI/UX Award in IBM Hack 2019.",
+    description:
+      "Secured the Best UI/UX Award in the IBM Hack 2019, showcasing our passion for seamless user experiences and innovative designs.",
     images: [
       // "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/ibm/1.jpg"
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/ibm/2.jpg"
@@ -71,7 +81,9 @@ const events = [
   {
     id: "helping_hands_hackathon",
     title: "Helping Hands Hackathon",
-    description: "Participated in this hackathon to support the orphanages",
+
+    description:
+      "Participated in the hackathon, channeling our skills to support orphanages and make a positive impact in our community.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_faces/helping_hands_hackathon/1.jpg",
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/helping_hands_hackathon/2.jpg",
@@ -81,7 +93,8 @@ const events = [
   {
     id: "sih_2019",
     title: "Smart India Hackathon 2019",
-    description: "Runner-Ups for building an Energy Management System.",
+    description:
+      "Earned the Runner-Up position for developing an Energy Management System, contributing to the sustainable future.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill/v1633365337/sih_2019/1.jpg"
     ]
@@ -89,7 +102,9 @@ const events = [
   {
     id: "ai_club",
     title: "AI Club Inauguration",
-    description: "Initiated and organized the AI Club in the college.",
+    description:
+      "Initiated and organized the AI Club in our college fostering a community of like-minded individuals interested in AI based apps.",
+    // description: "Initiated and organized the AI Club in the college.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_faces/v1633256101/ai_club/1.jpg",
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/ai_club/2.jpg",
@@ -100,7 +115,7 @@ const events = [
     id: "workshop_for_freshers",
     title: "Workshop for freshers.",
     description:
-      "Conducted the workshop to help out freshers and explain different paths & technologies.",
+      "Conducted an workshop for freshers, providing guidance on different career paths and introducing them to various exciting technologies.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/workshop_for_freshers/1.jpg",
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/workshop_for_freshers/2.jpg",
@@ -110,7 +125,8 @@ const events = [
   {
     id: "nasa_2018",
     title: "Nasa Space Apps Hackathon 2018",
-    description: "Won first place for building a Mars-like Environment Game.",
+    description:
+      "Secured the first place among 85 teams for developing an immersive Mars-like Environment Game.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/nasa_2018/1.jpg",
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/nasa_2018/2.jpg",
@@ -120,7 +136,8 @@ const events = [
   {
     id: "excite",
     title: "Excite 2018",
-    description: "A 60-Day Workshop on Product Development.",
+    description:
+      "During an intensive 60-day workshop on Product Development, I refined my skills and honing my expertise in building innovative solutions.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_faces/excite/1.jpg"
     ]
@@ -128,7 +145,8 @@ const events = [
   {
     id: "smart_city_hackathon",
     title: "Smart City Hackathon 2018",
-    description: "Won the Best Marketing Award for the application.",
+    description:
+      "Earned the Best Marketing Award for showcasing our creativity and problem-solving abilities.",
     images: [
       "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,f_auto,g_faces,x_0/smart_city_hackathon/1.jpg"
       // "https://res.cloudinary.com/dfq0wyslj/image/upload/smart_city_hackathon/2.jpg",
@@ -145,6 +163,11 @@ interface EventCardProps {
     images: string[];
   };
 }
+
+export const metadata: Metadata = {
+  title: "Ashfaq Nisar - Gallery",
+  description: "Gallery of Ashfaq Nisar"
+};
 
 const EventCard = ({ event }: EventCardProps) => {
   const { images = [] } = event;
