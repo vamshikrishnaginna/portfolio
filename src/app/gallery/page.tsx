@@ -166,7 +166,12 @@ interface EventCardProps {
 
 export const metadata: Metadata = {
   title: "Ashfaq Nisar - Gallery",
-  description: "Gallery of Ashfaq Nisar"
+  description: "Gallery of the events and workshops attended by Ashfaq Nisar",
+  openGraph: {
+    title: "Ashfaq Nisar - Gallery",
+    description: "Gallery of the events and workshops attended by Ashfaq Nisar",
+    url: "https://ashfaqnisar.me/gallery"
+  }
 };
 
 const EventCard = ({ event }: EventCardProps) => {

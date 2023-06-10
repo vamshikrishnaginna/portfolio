@@ -84,7 +84,12 @@ const projects: {
 
 export const metadata: Metadata = {
   title: "Ashfaq Nisar - Projects",
-  description: "Projects developed by Ashfaq Nisar"
+  description: "Projects developed by Ashfaq Nisar",
+  openGraph: {
+    title: "Ashfaq Nisar - Projects",
+    description: "Projects developed by Ashfaq Nisar",
+    url: "https://ashfaqnisar.com/projects"
+  }
 };
 
 const Page = () => {
