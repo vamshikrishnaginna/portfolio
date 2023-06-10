@@ -30,12 +30,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${roboto_mono.variable}`}>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-
-      <body className={"bg-black/60"}>
+      <body className={"bg-zinc-950"}>
         <TopBar />
         <main>{children}</main>
         <Analytics />

@@ -75,9 +75,7 @@ const IntroSection: React.FC<IntroSectionProps> = ({ name, description, email, r
           Hey, I&apos;m{" "}
           <span className="text-4xl font-bold duration-150 sm:text-5xl 2xl:text-6xl">{name}</span>
         </h1>
-        <p className="text-sm font-medium text-neutral-400 duration-150 sm:text-base">
-          {description}
-        </p>
+        <p className="text-sm font-medium text-gray-400 duration-150 sm:text-base">{description}</p>
       </div>
       <div className="flex flex-row justify-center space-x-5 md:justify-start">
         {socialLinks.map((item) => (
@@ -115,73 +113,18 @@ const IntroSection: React.FC<IntroSectionProps> = ({ name, description, email, r
   );
 };
 
-const AboutMe = () => {
-  return (
-    <>
-      <div className="mx-auto w-full max-w-4xl rounded-lg bg-zinc-900 p-6 shadow-md">
-        <h2 className="mb-4 text-2xl font-bold text-white">About Me</h2>
-        <p className="text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et convallis nulla, eu
-          sagittis urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-          cubilia Curae; In hac habitasse platea dictumst. Sed fringilla neque id condimentum
-          maximus. Integer id urna sit amet enim condimentum mattis. Proin sed neque vitae est
-          eleifend fermentum. Fusce vestibulum mauris a mi rutrum, eu pellentesque tortor consequat.
-          Sed commodo faucibus diam, nec pharetra elit. Proin eleifend ipsum auctor risus gravida,
-          in lobortis diam aliquet.
-        </p>
-      </div>
-      <div className="mx-auto w-full max-w-4xl rounded-lg bg-neutral-900 p-6 shadow-md">
-        <h2 className="mb-4 text-2xl font-bold text-white">About Me</h2>
-        <p className="text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et convallis nulla, eu
-          sagittis urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-          cubilia Curae; In hac habitasse platea dictumst. Sed fringilla neque id condimentum
-          maximus. Integer id urna sit amet enim condimentum mattis. Proin sed neque vitae est
-          eleifend fermentum. Fusce vestibulum mauris a mi rutrum, eu pellentesque tortor consequat.
-          Sed commodo faucibus diam, nec pharetra elit. Proin eleifend ipsum auctor risus gravida,
-          in lobortis diam aliquet.
-        </p>
-      </div>
-      <div className="mx-auto w-full max-w-4xl rounded-lg bg-gray-900 p-6 shadow-md">
-        <h2 className="mb-4 text-2xl font-bold text-white">About Me</h2>
-        <p className="text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et convallis nulla, eu
-          sagittis urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-          cubilia Curae; In hac habitasse platea dictumst. Sed fringilla neque id condimentum
-          maximus. Integer id urna sit amet enim condimentum mattis. Proin sed neque vitae est
-          eleifend fermentum. Fusce vestibulum mauris a mi rutrum, eu pellentesque tortor consequat.
-          Sed commodo faucibus diam, nec pharetra elit. Proin eleifend ipsum auctor risus gravida,
-          in lobortis diam aliquet.
-        </p>
-      </div>
-      <div className="mx-auto w-full max-w-4xl rounded-lg p-6 shadow-md">
-        <h2 className="mb-4 text-2xl font-bold text-white">About Me</h2>
-        <p className="text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et convallis nulla, eu
-          sagittis urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-          cubilia Curae; In hac habitasse platea dictumst. Sed fringilla neque id condimentum
-          maximus. Integer id urna sit amet enim condimentum mattis. Proin sed neque vitae est
-          eleifend fermentum. Fusce vestibulum mauris a mi rutrum, eu pellentesque tortor consequat.
-          Sed commodo faucibus diam, nec pharetra elit. Proin eleifend ipsum auctor risus gravida,
-          in lobortis diam aliquet.
-        </p>
-      </div>
-    </>
-  );
-};
-
 const Page = () => {
   return (
     <>
       <div className="flex flex-col gap-8 px-4 pb-8 md:gap-16 md:pb-16 xl:pb-24">
-        <div className="mx-auto mt-8 flex max-w-4xl flex-col-reverse items-center justify-center gap-x-10 gap-y-8 sm:mt-0  sm:min-h-screen sm:px-0 md:flex-row lg:gap-x-16">
+        <div className="mx-auto mt-8 flex max-w-4xl flex-col-reverse items-center justify-center gap-8 sm:-mb-40 sm:mt-0 sm:min-h-screen sm:px-0 md:flex-row lg:gap-16 2xl:gap-20">
           <IntroSection
             name="Ashfaq Nisar"
-            description="You can find me in a corner doing my own thing."
-            email={"ashfaqnisar00@gmail.com"}
-            resume={"Ashfaq_Resume.pdf"}
+            description="Welcome to my little kingdom on the internet! 👋"
+            email="ashfaqnisar00@gmail.com"
+            resume="Ashfaq_Resume.pdf"
           />
-          <div className="mb-2 duration-150">
+          <div className="mb-2">
             <Image
               src="/images/profile.png"
               alt="Picture of Ashfaq Nisar"
@@ -190,7 +133,40 @@ const Page = () => {
             />
           </div>
         </div>
-        <AboutMe />
+        <div className="mx-auto mt-12 w-full max-w-4xl p-6 shadow-md sm:mt-0">
+          <h2 className="mb-4 text-center text-2xl font-bold text-white duration-150 2xl:text-3xl">
+            About Me 🧑‍💻
+          </h2>
+          <div className="mb-4 flex flex-col items-center gap-4 text-sm text-gray-400 duration-150 sm:text-base 2xl:text-lg">
+            <p>
+              Greetings! I&apos;m Ashfaq (<b>Ash</b>), a coding enthusiast with a sprinkle of
+              quirkiness. I hold a Bachelor&apos;s degree in Computer Science and Engineering and
+              have a knack for coding spells. I have dived deep into the mystical realms of web
+              development, backend sorcery, cloud computing, and everything in between.
+            </p>
+            <p>
+              Think of me as a <b>tech wizard</b>, conjuring awe-inspiring digital spells. Just
+              don&apos;t ask me to turn your cat into a programmer (I&apos;m still working on that
+              spell).
+            </p>
+            <p>
+              When I&apos;m not harnessing the <b>power of code</b>, you might catch me swimming
+              through the latest technologies or exploring the enchanting realms of side projects.
+              I&apos;ve been known to whip up creative concoctions and sprinkle them with my
+              creativity. But fear not, I always make sure my web spells are efficient,
+              user-friendly, and leave a touch of awe in their wake.
+            </p>
+            <p>
+              I wielded my keyboard like a <b>magic wand</b>, leading a team of talented developers
+              at Ezerka. Together, we conjured up various projects using different tech stacks. In
+              addition to that, I have gained valuable experience at Cognizant and Rubicon.
+            </p>
+            <p>
+              With my <b>full-stack expertise</b> and a <b>pinch of quirkiness</b>, I&apos;m always
+              up for magical challenges and ready to create web wonders with my fellow wizards!
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
