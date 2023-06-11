@@ -133,7 +133,7 @@ const Page = () => {
             />
           </div>
         </div>
-        <div className="mx-auto mt-12 w-full max-w-4xl p-6 shadow-md sm:mt-0">
+        <div className="mx-auto mt-12 w-full max-w-5xl shadow-md sm:mt-0 ">
           <h2 className="mb-4 text-center text-2xl font-bold text-white duration-150 2xl:text-3xl">
             About Me 🧑‍💻
           </h2>
