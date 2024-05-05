@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillCode, AiFillFile, AiFillGithub } from "react-icons/ai";
 import { Fragment } from "react";
 
 const ProjectCard = ({
@@ -40,8 +40,8 @@ const ProjectCard = ({
           rel="noopener noreferrer"
           className="inline-flex flex-row items-center gap-2 rounded px-2 py-1 text-xs font-semibold text-gray-300 ring-1 ring-zinc-400 duration-150 hover:bg-zinc-900 hover:text-white hover:ring-zinc-300 2xl:text-sm"
         >
-          <AiFillGithub size={18} />
-          <span>Repo</span>
+          <AiFillFile size={18} />
+          <span>Link</span>
         </Link>
       )}
     </div>

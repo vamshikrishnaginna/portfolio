@@ -18,7 +18,7 @@ const navigation = [
   },
   {
     name: "Resume",
-    href: "Ashfaq_Resume.pdf",
+    href: "Vamshi_Krishna_Ginna_V5_4_Online_Resume.pdf",
     external: true
   }
 ] satisfies { name: string; href: string; external?: boolean }[];
@@ -35,7 +35,7 @@ const Topbar: React.FC = () => {
               "bg-gradient-to-t from-zinc-100/60 to-white bg-clip-text py-4 text-center font-sans text-3xl font-black tracking-tighter text-transparent sm:text-4xl"
             }
           >
-            AN
+            VG
           </Link>
           <nav className="flex grow items-center">
             <ul className="flex grow flex-wrap items-center justify-center gap-4 sm:justify-end">

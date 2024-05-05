@@ -28,42 +28,37 @@ const socialLinks: SocialLink[] = [
   {
     name: "Github",
     icon: <AiOutlineGithub />,
-    link: "https://github.com/ashfaqnisar"
-  },
-  {
-    name: "Codersrank",
-    icon: <SiCodersrank />,
-    link: "https://profile.codersrank.io/user/ashfaqnisar"
+    link: "https://github.com/vamshikrishnaginna"
   },
   {
     name: "StackOverflow",
     icon: <FaStackOverflow />,
-    link: "https://stackoverflow.com/users/10963451/ashfaq-nisar"
+    link: "https://stackoverflow.com/users/11260616/vamshi-krishna"
   },
   {
     name: "LinkedIn",
     icon: <AiFillLinkedin />,
-    link: "https://www.linkedin.com/in/ashfaqnisar/"
+    link: "https://www.linkedin.com/in/vamshikrishnaginna/"
   },
   {
     name: "Medium",
     icon: <AiOutlineMedium />,
-    link: "https://ashfaqnisar.medium.com"
+    link: "https://medium.com/@vamshiginna1606"
   },
   {
     name: "Leetcode",
     icon: <SiLeetcode />,
-    link: "https://leetcode.com/ashfaqnisar/"
+    link: "https://leetcode.com/u/vamshiginna1606/"
   },
   {
     name: "Youtube",
     icon: <AiFillYoutube />,
-    link: "https://www.youtube.com/@ashfaqnisar"
+    link: "https://www.youtube.com/@vamshikrishnaginna4003"
   },
   {
     name: "Twitter",
     icon: <AiOutlineTwitter />,
-    link: "https://twitter.com/ashfaqnisar00"
+    link: "https://twitter.com/vamshiginna1606"
   }
 ];
 
@@ -101,6 +96,13 @@ const IntroSection: React.FC<IntroSectionProps> = ({ name, description, email, r
           Email
         </Link>
         <Link
+          href={`https://topmate.io/vamshi_krishna_ginna`}
+          className="hover:drop-shadow-cta inline-block space-x-2 rounded px-4 py-1.5 text-base font-semibold leading-7 text-white ring-1 ring-zinc-600 duration-150 hover:bg-white hover:text-zinc-900 hover:ring-white sm:w-1/3 sm:text-center"
+        >
+          Let’s Talk!
+        </Link>
+
+        <Link
           href={resume}
           target="_blank"
           className="hover:drop-shadow-cta inline-block space-x-2 rounded bg-zinc-50 px-4 py-1.5 text-base font-semibold leading-7 text-zinc-800 ring-1 ring-transparent transition-all duration-150 hover:bg-zinc-900/20 hover:text-zinc-100 hover:ring-zinc-600/80 sm:w-1/3 sm:text-center"
@@ -119,52 +121,43 @@ const Page = () => {
       <div className="flex flex-col gap-8 px-4 pb-8 md:gap-16 md:pb-16 xl:pb-24">
         <div className="mx-auto mt-8 flex max-w-4xl flex-col-reverse items-center justify-center gap-8 sm:-mb-40 sm:mt-0 sm:min-h-screen sm:px-0 md:flex-row lg:gap-16 2xl:gap-20">
           <IntroSection
-            name="Ashfaq Nisar"
+            name="Vamshi Ginna"
             description="Welcome to my little kingdom on the internet! 👋"
-            email="ashfaqnisar00@gmail.com"
-            resume="Ashfaq_Resume.pdf"
+            email="vk.ginna@gmail.com"
+            resume="Vamshi_Krishna_Ginna_V5_4_Online_Resume.pdf"
           />
           <div className="mb-2">
             <Image
-              src="/images/profile.png"
-              alt="Picture of Ashfaq Nisar"
-              width={250}
-              height={300}
+              src="/images/profilePic4.png"
+              alt="Picture of Vamshi Krishna Ginna"
+              width={300}
+              height={450}
             />
           </div>
         </div>
         <div className="mx-auto mt-12 w-full max-w-5xl shadow-md sm:mt-0 ">
           <h2 className="mb-4 text-center text-2xl font-bold text-white duration-150 2xl:text-3xl">
-            About Me 🧑‍💻
+          🛠️ Behind the Code 🧑‍💻
           </h2>
           <div className="mb-4 flex flex-col items-center gap-4 text-sm text-gray-400 duration-150 sm:text-base 2xl:text-lg">
+                      
+            <p>Hello! I&apos;m <b>Vamshi</b>, a passionate software developer with a Master’s degree in Computer Science from the University of Maryland Baltimore County (UMBC). With over 4 years of experience in software development, machine learning, and full-stack development, I specialize in creating scalable, innovative solutions that bring impactful results.</p>
+
+            <p>I currently work as a Software Developer at Ardent Privacy, where I lead the re-architecture of backend systems and the implementation of high-performance APIs to enhance application dynamism. My expertise in technologies like Node.js, JavaScript, Python, and AWS has enabled me to deliver robust solutions that solve real-world challenges.</p>
+
+            <p>Beyond my professional role, I serve as a Software Engineering Teaching Assistant at UMBC, mentoring students and helping them refine their coding skills in courses like Operating Systems, Data Structures, and Machine Learning. This role has deepened my understanding of software engineering principles and sharpened my communication skills.</p>
+
+            <p>Throughout my journey, I&apos;ve actively participated in hackathons, workshops, and innovation challenges, staying on the cutting edge of tech trends. My experience spans software development, data analysis, system design, cloud computing, and database management. I&apos;m always eager to tackle complex challenges and collaborate with diverse teams to deliver exceptional results.</p>
+
+            <p>When I&apos;m not coding or mentoring, you&apos;ll find me sharing my tech insights on LinkedIn, where I create content to connect with fellow engineers and industry professionals.</p>
+
             <p>
-              Greetings! I&apos;m Ashfaq (<b>Ash</b>), a coding enthusiast with a sprinkle of
-              quirkiness. I hold a Bachelor&apos;s degree in Computer Science and Engineering and
-              have a knack for coding spells. I have dived deep into the mystical realms of web
-              development, backend sorcery, cloud computing, and everything in between.
-            </p>
-            <p>
-              Think of me as a <b>tech wizard</b>, conjuring awe-inspiring digital spells. Just
-              don&apos;t ask me to turn your cat into a programmer (I&apos;m still working on that
-              spell).
-            </p>
-            <p>
-              When I&apos;m not harnessing the <b>power of code</b>, you might catch me swimming
-              through the latest technologies or exploring the enchanting realms of side projects.
-              I&apos;ve been known to whip up creative concoctions and sprinkle them with my
-              creativity. But fear not, I always make sure my web spells are efficient,
-              user-friendly, and leave a touch of awe in their wake.
-            </p>
-            <p>
-              I wielded my keyboard like a <b>magic wand</b>, leading a team of talented developers
-              at Ezerka. Together, we conjured up various projects using different tech stacks. In
-              addition to that, I have gained valuable experience at Cognizant and Rubicon.
-            </p>
-            <p>
-              With my <b>full-stack expertise</b> and a <b>pinch of quirkiness</b>, I&apos;m always
-              up for magical challenges and ready to create web wonders with my fellow wizards!
-            </p>
+    I use <i><a href="https://topmate.io/vamshi_krishna_ginna" target="_blank">Topmate.io</a></i> to connect with people, share my insights, and provide valuable advice on software development, studying abroad, and career growth. Check out my profile to book a 1:1 chat or get personalized advice!
+</p>
+            <p>🤝 Let&apos;s connect, and together, we can drive innovation in the tech industry!</p>
+
+
+
           </div>
         </div>
       </div>

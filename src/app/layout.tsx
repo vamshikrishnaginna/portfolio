@@ -18,11 +18,11 @@ const roboto_mono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ashfaq Nisar",
-  description: "Portfolio of Ashfaq Nisar",
+  title: "Vamshi Ginna",
+  description: "Portfolio of Vamshi Ginna",
   openGraph: {
-    title: "Ashfaq Nisar",
-    description: "Portfolio of Ashfaq Nisar",
+    title: "Vamshi Ginna",
+    description: "Portfolio of Vamshi Ginna",
     type: "website"
   }
 };

@@ -3,70 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 const events = [
-  {
-    id: "devfest_2022",
-    title: "Dev Fest 2022",
-    description:
-      "Had an enjoyable time socializing and gaining insights on cutting-edge technical advancements.",
-    images: [
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_north/v1676453155/devfest_2022/1.jpg"
-    ]
-  },
-  {
-    id: "vjit_2020",
-    title: "VJIT Hackathon 2021",
-    description:
-      "I had an amazing time helping students navigate various issues, providing guidance, and mentoring them throughout the 24-hour hackathon.",
-    // description:
-    //   "Organized and mentored aspiring participants in an atmosphere, where creativity and problem-solving skills flourished. Witnessing the participants' dedication and innovative solutions was truly inspiring.",
-    // description: "Organized & Mentored the hackathon participants.",
-    images: [
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/vjit_2020/1.jpg",
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/vjit_2020/2.jpg",
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/vjit_2020/3.jpg"
-    ]
-  },
-  {
-    id: "cloud_study_jam_1",
-    title: "Cloud Study Jam",
-    description:
-      "Conducted an engaging workshop on Google Cloud, talking about the immense potential of cloud technologies.",
-    images: [
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/cloud_study_jam_1/1.jpg",
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/cloud_study_jam_1/2.jpg",
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/cloud_study_jam_1/3.jpg"
-    ]
-  },
-  {
-    id: "devfest_2019",
-    title: "Devfest 2019",
-    description: "Enjoyed meeting people & learning about various technical stuff.",
-    images: [
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/devfest_2019/1.jpg",
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/devfest_2019/2.jpg",
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/devfest_2019/3.jpg"
-    ]
-  },
-  {
-    id: "dsc_summit",
-    title: "DSC Leads India Summit",
-    description:
-      "Had a great time at the event with other leads and tech enthusiasts from all over the country!",
-    images: [
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_faces/v1676451059/dsc_summit/1.jpg"
-    ]
-  },
-  {
-    id: "jetbrains_day_2019",
-    title: "Jetbrains Day 2019",
-    description:
-      "Indulged in a day filled with fascinating talks, exciting demo's. Loved the whole thing and had a lot of fun at the event!",
-    images: [
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_north/jetbrains_day_2019/1.jpg",
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/jetbrains_day_2019/2.jpg",
-      "https://res.cloudinary.com/dfq0wyslj/image/upload/w_1000,h_800,c_fill,g_auto/jetbrains_day_2019/3.jpg"
-    ]
-  },
+  
   {
     id: "ibm",
     title: "IBM Hack 2019 Challenge",
@@ -165,12 +102,12 @@ interface EventCardProps {
 }
 
 export const metadata: Metadata = {
-  title: "Ashfaq Nisar - Gallery",
-  description: "Gallery of the events and workshops attended by Ashfaq Nisar",
+  title: "Vamshi Ginna - Gallery",
+  description: "Gallery of the events and workshops attended by Vamshi Ginna",
   openGraph: {
-    title: "Ashfaq Nisar - Gallery",
-    description: "Gallery of the events and workshops attended by Ashfaq Nisar",
-    url: "https://ashfaqnisar.me/gallery"
+    title: "Vamshi Ginna - Gallery",
+    description: "Gallery of the events and workshops attended by Vamshi Ginna",
+    url: ""
   }
 };
 

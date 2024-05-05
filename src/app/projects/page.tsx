@@ -12,6 +12,14 @@ const projects: {
   website?: string;
 }[] = [
   {
+    id: "Confidence_Estimation_of_a_Model_and_Explainable_AI",
+    name: "Confidence Estimation of a Model and Explainable AI",
+    description:
+      "Utilized the CNN pre-trained model ResNet 50 for classifying tumors in the scanned medical image to identify breast cancer.To handle the imbalanced dataset, applied the Leave-One-Out cross-validation technique which increased accuracy by 60%",
+    repo:"https://drive.google.com/file/d/1RpEKPL3CqE2ZC7B5V9rUiNk5S1eXZJEN/view",
+      tags: ["Python" , "Machine Learning", "Google Colab"]
+  },
+  {
     id: "order_management_system",
     name: "Order Management System",
     description:
@@ -28,19 +36,12 @@ const projects: {
     website: "https://esocr.vercel.app/"
   },
   {
-    id: "return_order_system",
-    name: "Return Order Service System",
-    description:
-      "Created a Return Order System to facilitate the return of defective or damaged goods to the seller. The application was built using various microservices for optimal performance and scalability",
-    repo: "https://github.com/ashfaqnisar/Return-Order-Management-System",
-    tags: ["java", "maven", "SpringBoot", "thymeleaf"]
-  },
-  {
     id: "adani",
     name: "Adani Ports Invoice Reconciliation System",
     description:
       "APIRS is a system designed to streamline the invoicing and payment process for both customers and the Adani Ports billing team. Its goal is to ensure accurate and timely payments while reducing the time and effort required to manage invoices and payments.",
-    tags: ["react", "firebase", "express", "razorpay"]
+      repo: "https://www.linkedin.com/posts/adani-ports-%26-sez-ltd-_aatmanirbharbharat-innovation-adaniports-activity-6696773252469059584-CW8L?utm_source=share&utm_medium=member_desktop",
+      tags: ["react", "firebase", "express", "razorpay"]
   },
   {
     id: "college_erp",
@@ -50,19 +51,11 @@ const projects: {
     tags: ["react", "firestore", "firebase Functions", "express"]
   },
   {
-    id: "dsc_vjit",
-    name: "DSC VJIT Community Site",
-    description:
-      "Built a dynamic website for the DSC (Developer Student Club), which was integrated with the GDG Aura Community Dashboard. Due to this integration, we were able to leverage additional features from the dashboard, including seamless management of workshops, teams, and custom pages for the events",
-    repo: "https://github.com/ashfaqnisar/dsc-vjit-website",
-    tags: ["next JS", "firestore", "Vue JS"]
-  },
-  {
     id: "kiosk",
     name: "KIOSK Wastage Recycler",
     description:
       "Developed a Java project to manage various types of wastage provided to the KIOSK, featuring a command-line user interface for user interaction. The system enables efficient handling and monitoring of different types of wastage through an intuitive interface.",
-    repo: "https://github.com/ashfaqnisar/Return-Order-Management-System",
+    repo: "https://github.com/vamshikrishnaginna/Swachh-Bharat-Assignment",
     tags: ["java", "maven"]
   },
   {
@@ -70,7 +63,7 @@ const projects: {
     name: "Enimo",
     description:
       "Enimo is an energy information and monitoring system designed to help users monitor the energy consumption of their appliances. The system provides real-time updates on the energy consumed by each appliance and displays the data in easy-to-read charts.",
-    repo: "https://github.com/ashfaqnisar/enimo",
+    repo: "https://github.com/vamshikrishnaginna/Enimo",
     tags: ["react", "IOT", "firebase", "Pub-Sub"]
   },
   {
@@ -78,16 +71,17 @@ const projects: {
     name: "Mars Habitat Environment",
     description:
       "Designed and built a game environment to simulate the colonization of Mars, providing users with an immersive experience. The game environment features a range of technical elements and challenges, enabling players to explore and learn about the challenges of colonizing the red planet.",
-    tags: ["UnrealEngine", "C#"]
+      repo: "https://www.youtube.com/watch?v=3up2qHrQdkc",
+      tags: ["UnrealEngine", "C#"]    
   }
 ];
 
 export const metadata: Metadata = {
-  title: "Ashfaq Nisar - Projects",
-  description: "Projects developed by Ashfaq Nisar",
+  title: "Vamshi Ginna - Projects",
+  description: "Projects developed by Vamshi Ginna",
   openGraph: {
-    title: "Ashfaq Nisar - Projects",
-    description: "Projects developed by Ashfaq Nisar",
+    title: "Vamshi Ginna - Projects",
+    description: "Projects developed by Vamshi Ginna",
     url: "https://ashfaqnisar.com/projects"
   }
 };

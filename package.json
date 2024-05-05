@@ -1,11 +1,11 @@
 {
   "name": "portfolio",
   "version": "2.0.0",
-  "description": "Ashfaq's Portfolio Website.",
+  "description": "Vamshi's Portfolio Website.",
   "author": {
-    "name": "Ashfaq Nisar",
-    "email": "ashfaqnisar00@gmail.com",
-    "url": "https://ashfaqnisar.me"
+    "name": "Vamshi Krishna Ginna",
+    "email": "vk.ginna@gmail.com",
+    "url": ""
   },
   "license": "MIT",
   "scripts": {
