@@ -5,6 +5,6 @@
   "rules": {
     "prettier/prettier": "error",
     "quotes": 1,
-    "no-unused-vars": "error"
+    "no-unused-vars": "warn"
   }
 }

@@ -3,7 +3,6 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 const events = [
-  
   {
     id: "ibm",
     title: "IBM Hack 2019 Challenge",

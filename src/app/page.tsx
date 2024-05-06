@@ -96,7 +96,7 @@ const IntroSection: React.FC<IntroSectionProps> = ({ name, description, email, r
           Email
         </Link>
         <Link
-          href={`https://topmate.io/vamshi_krishna_ginna`}
+          href={"https://topmate.io/vamshi_krishna_ginna"}
           className="hover:drop-shadow-cta inline-block space-x-2 rounded px-4 py-1.5 text-base font-semibold leading-7 text-white ring-1 ring-zinc-600 duration-150 hover:bg-white hover:text-zinc-900 hover:ring-white sm:w-1/3 sm:text-center"
         >
           Let’s Talk!
@@ -137,27 +137,61 @@ const Page = () => {
         </div>
         <div className="mx-auto mt-12 w-full max-w-5xl shadow-md sm:mt-0 ">
           <h2 className="mb-4 text-center text-2xl font-bold text-white duration-150 2xl:text-3xl">
-          🛠️ Behind the Code 🧑‍💻
+            🛠️ Behind the Code 🧑‍💻
           </h2>
           <div className="mb-4 flex flex-col items-center gap-4 text-sm text-gray-400 duration-150 sm:text-base 2xl:text-lg">
-                      
-            <p>Hello! I&apos;m <b>Vamshi</b>, a passionate software developer with a Master’s degree in Computer Science from the University of Maryland Baltimore County (UMBC). With over 4 years of experience in software development, machine learning, and full-stack development, I specialize in creating scalable, innovative solutions that bring impactful results.</p>
-
-            <p>I currently work as a Software Developer at Ardent Privacy, where I lead the re-architecture of backend systems and the implementation of high-performance APIs to enhance application dynamism. My expertise in technologies like Node.js, JavaScript, Python, and AWS has enabled me to deliver robust solutions that solve real-world challenges.</p>
-
-            <p>Beyond my professional role, I serve as a Software Engineering Teaching Assistant at UMBC, mentoring students and helping them refine their coding skills in courses like Operating Systems, Data Structures, and Machine Learning. This role has deepened my understanding of software engineering principles and sharpened my communication skills.</p>
-
-            <p>Throughout my journey, I&apos;ve actively participated in hackathons, workshops, and innovation challenges, staying on the cutting edge of tech trends. My experience spans software development, data analysis, system design, cloud computing, and database management. I&apos;m always eager to tackle complex challenges and collaborate with diverse teams to deliver exceptional results.</p>
-
-            <p>When I&apos;m not coding or mentoring, you&apos;ll find me sharing my tech insights on LinkedIn, where I create content to connect with fellow engineers and industry professionals.</p>
+            <p>
+              Hello! I&apos;m <b>Vamshi</b>, a passionate software developer with a Master’s degree
+              in Computer Science from the University of Maryland Baltimore County (UMBC). With over
+              4 years of experience in software development, machine learning, and full-stack
+              development, I specialize in creating scalable, innovative solutions that bring
+              impactful results.
+            </p>
 
             <p>
-    I use <i><a href="https://topmate.io/vamshi_krishna_ginna" target="_blank">Topmate.io</a></i> to connect with people, share my insights, and provide valuable advice on software development, studying abroad, and career growth. Check out my profile to book a 1:1 chat or get personalized advice!
-</p>
-            <p>🤝 Let&apos;s connect, and together, we can drive innovation in the tech industry!</p>
+              I currently work as a Software Developer at Ardent Privacy, where I lead the
+              re-architecture of backend systems and the implementation of high-performance APIs to
+              enhance application dynamism. My expertise in technologies like Node.js, JavaScript,
+              Python, and AWS has enabled me to deliver robust solutions that solve real-world
+              challenges.
+            </p>
 
+            <p>
+              Beyond my professional role, I serve as a Software Engineering Teaching Assistant at
+              UMBC, mentoring students and helping them refine their coding skills in courses like
+              Operating Systems, Data Structures, and Machine Learning. This role has deepened my
+              understanding of software engineering principles and sharpened my communication
+              skills.
+            </p>
 
+            <p>
+              Throughout my journey, I&apos;ve actively participated in hackathons, workshops, and
+              innovation challenges, staying on the cutting edge of tech trends. My experience spans
+              software development, data analysis, system design, cloud computing, and database
+              management. I&apos;m always eager to tackle complex challenges and collaborate with
+              diverse teams to deliver exceptional results.
+            </p>
 
+            <p>
+              When I&apos;m not coding or mentoring, you&apos;ll find me sharing my tech insights on
+              LinkedIn, where I create content to connect with fellow engineers and industry
+              professionals.
+            </p>
+
+            <p>
+              I use{" "}
+              <i>
+                <a href="https://topmate.io/vamshi_krishna_ginna" target="_blank">
+                  Topmate.io
+                </a>
+              </i>{" "}
+              to connect with people, share my insights, and provide valuable advice on software
+              development, studying abroad, and career growth. Check out my profile to book a 1:1
+              chat or get personalized advice!
+            </p>
+            <p>
+              🤝 Let&apos;s connect, and together, we can drive innovation in the tech industry!
+            </p>
           </div>
         </div>
       </div>

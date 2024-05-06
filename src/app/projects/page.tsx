@@ -16,8 +16,8 @@ const projects: {
     name: "Confidence Estimation of a Model and Explainable AI",
     description:
       "Utilized the CNN pre-trained model ResNet 50 for classifying tumors in the scanned medical image to identify breast cancer.To handle the imbalanced dataset, applied the Leave-One-Out cross-validation technique which increased accuracy by 60%",
-    repo:"https://drive.google.com/file/d/1RpEKPL3CqE2ZC7B5V9rUiNk5S1eXZJEN/view",
-      tags: ["Python" , "Machine Learning", "Google Colab"]
+    repo: "https://drive.google.com/file/d/1RpEKPL3CqE2ZC7B5V9rUiNk5S1eXZJEN/view",
+    tags: ["Python", "Machine Learning", "Google Colab"]
   },
   {
     id: "order_management_system",
@@ -40,8 +40,8 @@ const projects: {
     name: "Adani Ports Invoice Reconciliation System",
     description:
       "APIRS is a system designed to streamline the invoicing and payment process for both customers and the Adani Ports billing team. Its goal is to ensure accurate and timely payments while reducing the time and effort required to manage invoices and payments.",
-      repo: "https://www.linkedin.com/posts/adani-ports-%26-sez-ltd-_aatmanirbharbharat-innovation-adaniports-activity-6696773252469059584-CW8L?utm_source=share&utm_medium=member_desktop",
-      tags: ["react", "firebase", "express", "razorpay"]
+    repo: "https://www.linkedin.com/posts/adani-ports-%26-sez-ltd-_aatmanirbharbharat-innovation-adaniports-activity-6696773252469059584-CW8L?utm_source=share&utm_medium=member_desktop",
+    tags: ["react", "firebase", "express", "razorpay"]
   },
   {
     id: "college_erp",
@@ -71,8 +71,8 @@ const projects: {
     name: "Mars Habitat Environment",
     description:
       "Designed and built a game environment to simulate the colonization of Mars, providing users with an immersive experience. The game environment features a range of technical elements and challenges, enabling players to explore and learn about the challenges of colonizing the red planet.",
-      repo: "https://www.youtube.com/watch?v=3up2qHrQdkc",
-      tags: ["UnrealEngine", "C#"]    
+    repo: "https://www.youtube.com/watch?v=3up2qHrQdkc",
+    tags: ["UnrealEngine", "C#"]
   }
 ];
 
