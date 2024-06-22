@@ -18,7 +18,7 @@ const navigation = [
   },
   {
     name: "Resume",
-    href: "Vamshi_Krishna_Ginna_V7_2_Online_Resume.pdf",
+    href: "VamshiG_Resume_v8.pdf",
     external: true
   }
 ] satisfies { name: string; href: string; external?: boolean }[];
