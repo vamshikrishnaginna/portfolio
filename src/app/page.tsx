@@ -143,7 +143,7 @@ const Page = () => {
             <p>
               Hello! I&apos;m <b>Vamshi</b>, a passionate software developer with a Master’s degree
               in Computer Science from the University of Maryland Baltimore County (UMBC). With over
-              4 years of experience in software development, machine learning, and full-stack
+              5 years of experience in software development, machine learning, and full-stack
               development, I specialize in creating scalable, innovative solutions that bring
               impactful results.
             </p>
