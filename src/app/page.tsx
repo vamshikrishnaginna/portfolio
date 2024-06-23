@@ -124,7 +124,7 @@ const Page = () => {
             name="Vamshi Ginna"
             description="Welcome to my little kingdom on the internet! 👋"
             email="vk.ginna@gmail.com"
-            resume="Vamshi_Krishna_Ginna_V6_Online_Resume.pdf"
+            resume="VamshiG_Resume_v8.pdf"
           />
           <div className="mb-2">
             <Image
