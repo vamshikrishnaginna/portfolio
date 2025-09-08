@@ -30,11 +30,11 @@ const socialLinks: SocialLink[] = [
     icon: <AiOutlineGithub />,
     link: "https://github.com/vamshikrishnaginna"
   },
-  {
-    name: "StackOverflow",
-    icon: <FaStackOverflow />,
-    link: "https://stackoverflow.com/users/11260616/vamshi-krishna"
-  },
+  // {
+  //   name: "StackOverflow",
+  //   icon: <FaStackOverflow />,
+  //   link: "https://stackoverflow.com/users/11260616/vamshi-krishna"
+  // },
   {
     name: "LinkedIn",
     icon: <AiFillLinkedin />,
@@ -45,11 +45,11 @@ const socialLinks: SocialLink[] = [
     icon: <AiOutlineMedium />,
     link: "https://medium.com/@vamshiginna1606"
   },
-  {
-    name: "Leetcode",
-    icon: <SiLeetcode />,
-    link: "https://leetcode.com/u/vamshiginna1606/"
-  },
+  // {
+  //   name: "Leetcode",
+  //   icon: <SiLeetcode />,
+  //   link: "https://leetcode.com/u/vamshiginna1606/"
+  // },
   {
     name: "Youtube",
     icon: <AiFillYoutube />,
@@ -124,7 +124,7 @@ const Page = () => {
             name="Vamshi Ginna"
             description="Welcome to my little kingdom on the internet! 👋"
             email="vk.ginna@gmail.com"
-            resume="VamshiG_Resume_v8.pdf"
+            resume="Resume_VamshiGinna.pdf"
           />
           <div className="mb-2">
             <Image
@@ -141,45 +141,40 @@ const Page = () => {
           </h2>
           <div className="mb-4 flex flex-col items-center gap-4 text-sm text-gray-400 duration-150 sm:text-base 2xl:text-lg">
             <p>
-              Hello! I&apos;m <b>Vamshi</b>, a passionate software developer with a Master’s degree
-              in Computer Science from the University of Maryland Baltimore County (UMBC). With over
-              5 years of experience in software development, machine learning, and full-stack
-              development, I specialize in creating scalable, innovative solutions that bring
-              impactful results.
+              Hello! I&apos;m <b>Vamshi</b>, a passionate AI Software Engineer with a Master’s
+              degree in Computer Science from the University of Maryland, Baltimore County (UMBC).
+              With over 5 years of experience in software development, machine learning, and
+              full-stack engineering, I specialize in creating scalable, innovative solutions that
+              bring impactful results.
             </p>
 
             <p>
-              I currently work as a Software Developer at Ardent Privacy, where I lead the
-              re-architecture of backend systems and the implementation of high-performance APIs to
-              enhance application dynamism. My expertise in technologies like Node.js, JavaScript,
-              Python, and AWS has enabled me to deliver robust solutions that solve real-world
-              challenges.
+              I currently work as a Full Stack Developer at LCG Inc., where I design and deploy
+              enterprise-scale AI platforms, multi-modal RAG systems, and conversational AI
+              solutions using Azure OpenAI, Semantic Kernel, LangChain, AutoGen, Agno, and agentic
+              AI workflows. Previously, I worked as a Software Developer at Ardent Privacy, where I
+              led the re-architecture of backend systems, implemented high-performance APIs, and
+              developed NLP-powered data discovery systems using Python and LangChain. My expertise
+              in technologies like Java, Python, Node.js, React, Spring Boot, and AWS has enabled me
+              to deliver production-ready solutions that solve real-world challenges.
             </p>
-
             <p>
-              Beyond my professional role, I serve as a Software Engineering Teaching Assistant at
-              UMBC, mentoring students and helping them refine their coding skills in courses like
-              Operating Systems, Data Structures, and Machine Learning. This role has deepened my
-              understanding of software engineering principles and sharpened my communication
-              skills.
+              Throughout my journey, I’ve actively participated in hackathons, workshops, and
+              research, winning honors at NASA Space Apps, IBM Hackathons, and Smart India
+              Hackathon. I’ve also co-authored research in AI for cybersecurity and energy systems,
+              keeping me at the cutting edge of technology.
             </p>
-
             <p>
-              Throughout my journey, I&apos;ve actively participated in hackathons, workshops, and
-              innovation challenges, staying on the cutting edge of tech trends. My experience spans
-              software development, data analysis, system design, cloud computing, and database
-              management. I&apos;m always eager to tackle complex challenges and collaborate with
-              diverse teams to deliver exceptional results.
+              I’m a Microsoft Certified Azure AI Engineer and Azure Data Scientist, passionate about
+              leveraging AI and cloud computing to solve complex real-world problems. Outside of
+              work, I regularly write technical blogs on Medium, where I share practical guides and
+              deep dives into topics like LangChain, LangGraph, RAG applications, Python, and AI
+              workflows — helping developers and engineers accelerate their journey into AI and
+              cloud development.
             </p>
-
             <p>
-              When I&apos;m not coding or mentoring, you&apos;ll find me sharing my tech insights on
-              LinkedIn, where I create content to connect with fellow engineers and industry
-              professionals.
-            </p>
-
-            <p>
-              I use{" "}
+              When I’m not coding, writing, or mentoring, you’ll find me sharing insights on
+              LinkedIn and connecting with engineers, students, and innovators. I also use
               <i>
                 <a href="https://topmate.io/vamshi_krishna_ginna" target="_blank">
                   Topmate.io
@@ -189,9 +184,8 @@ const Page = () => {
               development, studying abroad, and career growth. Check out my profile to book a 1:1
               chat or get personalized advice!
             </p>
-            <p>
-              🤝 Let&apos;s connect, and together, we can drive innovation in the tech industry!
-            </p>
+
+            <p>🤝 Let&apos;s connect - together, we can drive innovation in the tech industry!</p>
           </div>
         </div>
       </div>

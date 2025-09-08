@@ -18,7 +18,7 @@ const navigation = [
   },
   {
     name: "Resume",
-    href: "VamshiG_Resume_v8.pdf",
+    href: "Resume_VamshiGinna.pdf",
     external: true
   }
 ] satisfies { name: string; href: string; external?: boolean }[];
